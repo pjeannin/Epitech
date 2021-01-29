@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Tasks
+{% endblock %}
+
+{% block content %}
+<main role="main" class="container-sm small-container">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="mb-3">My tasks</h1>
+            </div>
+            <div class="col align-self-end">
+                <a href="/tasks/create" class="btn btn-success float-right mb-3">Add</a>
+            </div>
+        </div>
+    </div>
+    <span class="float-none"></span>
+    <div class="container">
+        <div class="row">
+            {% for task in tasks %}
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-success">{{ task['title'] }} ({{ task['status'] }})</h5>
+                            <a href="/tasks/{{task['task_id']}}" class="btn btn-primary">Details</a>
+                            <a href="/tasks/{{task['task_id']}}/delete" class="btn btn-danger float-right">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,72 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 110borwein_2019
+## File description:
+## 110borwein
+##
+
+import math
+import sys
+
+PI = 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582
+USAGE = "USAGE\n\t./110borwein n\n\n\nDESCRIPTION\n\tn\tconstant defining the integral to be computed"
+
+def compute_borwein(n, x):
+    res = 1
+    k = 0
+    if x == 0:
+        return res
+    while k <= n:
+        res = res * (math.sin(x / (2 * k + 1)) / (x / (2 * k + 1)))
+        k += 1
+    return res
+
+def midpoint(n):
+    integral = 0
+    x = 0
+    while x < 5000:
+        integral += compute_borwein(n, (x + x + 0.5) / 2) * 0.5
+        x += 0.5
+    print("Midpoint:\nI%d" % n, "=", "%.10f" % integral)
+    print("diff = %.10f\n" % (PI / 2 - integral))
+
+def trapezoid(n):
+    integral = 0
+    x = 0
+    while x < 5000:
+        integral += ((compute_borwein(n, x) + compute_borwein(n, x + 0.5)) * 0.5) / 2
+        x += 0.5
+    print("Trapezoidal:\nI%d" % n, "=", "%.10f" % integral)
+    print("diff = %.10f\n" % (PI / 2 - integral))
+
+def simpson(n):
+    integral = 0
+    x = 0
+    while x < 5000:
+        integral += (((x + 0.5) - x) / 6) * (compute_borwein(n, x) + 4 * compute_borwein(n, (x + (x + 0.5)) / 2) + compute_borwein(n, x + 0.5))
+        x += 0.5
+    print("Simpson:\nI%d" % n, "=", "%.10f" % integral)
+    print("diff = %.10f" % (PI / 2 - integral))
+
+try:
+    if len(sys.argv) != 2:
+        b = 4/0
+    if sys.argv[1] == "-h":
+        print(USAGE)
+    elif int(sys.argv[1]) < 0:
+        b = 4/0
+except:
+    print("Bad input")
+    exit(84)
+if sys.argv[1] == "-h":
+    exit(0)
+try:
+    midpoint(int(sys.argv[1]))
+    trapezoid(int(sys.argv[1]))
+    simpson(int(sys.argv[1]))
+except:
+    print("Error")
+    exit(84)
+exit(0)

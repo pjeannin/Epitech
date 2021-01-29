@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Delete task
+{% endblock %}
+
+{% block content %}
+<main role="main" class="container-sm small-container">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="mb-3">Delete task `{{task.title}}` ?</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <a href="/tasks" class="btn btn-success btn-lg">No</a>
+            </div>
+            <div class="col text-center">
+                <form action="/tasks/{{task['task_id']}}/delete" method="post">
+                    <button class="btn btn-danger btn-lg" type="submit">Yes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

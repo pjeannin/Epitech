@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+New task
+{% endblock %}
+
+{% block content %}
+<main role="main" class="container-sm small-container">
+    <h1>New task</h1>
+
+    <form action="/tasks/create" method="POST">
+        <div class="form-group">
+            <label for="inputTitle">Title</label>
+            <input type="text" name="title" class="form-control" id="inputTitle">
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        {% if error is defined %}
+            <div class="alert alert-danger mt-2" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+    </form>
+</main>
+{% endblock %}

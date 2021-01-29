@@ -1,0 +1,99 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 106bombyx
+## File description:
+## 106bombyx
+##
+
+import sys
+
+def display(n, digit):
+    # do_count = 0
+    # counter = 0
+    # if (round(n, digit) == 0 and str(round(n, digit))[0] == '-'): #or 'e' in str(round(n, digit)):
+    #     n = 0
+    # print(round(n, digit), end='')
+    # for k in range(len(str(round(n, digit)))):
+    #     if (str(round(n, digit))[k] == "."):
+    #         do_count = 1
+    #     elif do_count == 1:
+    #         counter += 1
+    # if counter >= 1:
+    #     print("0" * (digit - counter), end='')
+    # if do_count == 0:
+    #     print(".", end='')
+    #     print("0" * digit, end='')
+    print("%.5f" % (n,))
+
+def check_argv(argvi):
+    for i in range(len(argvi)):
+        if argvi[i] == '-' and (i != 0 and (argvi[i - 1] != '*' or argvi[i + 1] < '0' or argvi[i + 1] > '9')):
+            i = 4/0
+        elif (argvi[i] not in "1234567890") and argvi[i] != '*' and argvi[i] != '-':
+            i = 4/0
+
+def get_coef(string):
+    coef_list = []
+    neg = 1
+    number = 0
+    for c in string:
+        if c == '*':
+            number *= neg
+            coef_list.append(number)
+            neg = 1
+            number = 0
+        elif c == '-':
+            neg = -1
+        else:
+            number = number * 10 + int(c)
+    number *= neg
+    coef_list.append(number)
+    coef_list.reverse()
+    return (coef_list)
+
+try:
+    if len(sys.argv) == 1:
+        b = 4/0
+    elif len(sys.argv) == 2 and sys.argv[1] == "-h":
+        print("USAGE\n\t.107transfer [num den]*\n\nDESCRIPTION\n\tnum\tpolynomial numerator defined by its coefficients\n\tden\tpolynomial denominator defined by its coefficients")
+    elif len(sys.argv) % 2 != 1:
+        b = 4/0
+    for elem in sys.argv:
+        if elem != "./107transfer":
+            check_argv(elem)
+except:
+    print("¡ Error !")
+    exit(84)
+try:
+    x = 0
+    coeflist = []
+    for i in range(1, len(sys.argv)):
+        coeflist.append(get_coef(sys.argv[i]))
+    while x <= 1.001:
+        y1 = 0
+        y2 = 0
+        y = 0
+        main_y = 1
+        for i in range(0, int((len(sys.argv) - 1) / 2) + 1, 2):
+            for elem in coeflist[i]:
+                y1 = y1 * x + elem
+            for elem in coeflist[i + 1]:
+                y2 = y2 * x + elem
+            y = y1 / y2
+            main_y *= y
+            y = 0
+            y1 = 0
+            y2 = 0
+        #display(x, 3)
+        print("%.3f" % x, end='')
+        print(" -> ", end='')
+        #display(main_y, 5)
+        print("%.5f" % main_y)
+        # print("")
+        x += 0.001
+except:
+    print("¡ Error !\nCan't divid by 0")
+    exit(84)
+exit(0)

@@ -1,0 +1,122 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 105torus
+## File description:
+## 105torus
+##
+
+import sys
+
+def f(x, coef):
+    return(coef[0] * x ** 4 + coef[1] * x ** 3 + coef[2] * x ** 2 + coef[3] * x + coef[4])
+
+def f_prim(x, coef):
+    return(4 * coef[0] * x ** 3 + 3 * coef[1] * x ** 2 + 2 * coef[2] * x + coef[3])
+
+def compute_x(a, coef):
+    return (((0 - f(a, coef))/f_prim(a, coef)) + a)
+
+def print_f(x, coef):
+    print("f(x) =", coef[0], end='')
+    print("x^4 +", coef[1], end='')
+    print("x^3 +", coef[2], end='')
+    print("x^2 +", coef[3], end='')
+    print("x +", coef[4])
+    print("f(", end='')
+    print(x, end='')
+    print(") =", round(f(x, coef), 6))
+
+def newton(x, coef, digit, i, lend):
+    i += 1
+    if i == 1000:
+        exit
+    if round(f(x, coef), digit) == 0:
+        return (x)
+    print("x =", round(x, digit), end='')
+    if lend < len(str(round(x, digit))):
+        lend = len(str(round(x, digit)))
+    elif lend > len(str(round(x, digit))):
+        print("0" * (lend - len(str(round(x, digit)))), end='')
+    print("")
+    return(newton(compute_x(x, coef), coef, digit, i, lend))
+
+def bisection(x1, x2, coef, digit, i, lend):
+    i += 1
+    if i == 1000:
+        exit
+    m2 = f(x2, coef)
+    m3 = f((x1 + x2) / 2, coef)
+    if round(m3, digit) == 0:
+        return (x1)
+    print("x =", round((x1 + x2) / 2, digit), end='')
+    if len(str(round((x1 + x2) / 2, digit))) > lend:
+        lend = len(str(round((x1 + x2) / 2, digit)))
+    elif len(str(round((x1 + x2) / 2, digit))) < lend:
+        print("0" * (lend - len(str(round((x1 + x2) / 2, digit)))), end='')
+    print("")
+    if m2 * m3 > 0:
+        return(bisection(x1, (x1 + x2) / 2, coef, digit, i, lend))
+    if m2 * m3 < 0:
+        return(bisection((x1 + x2) / 2, x2, coef, digit, i, lend))
+
+def sceante(coef, digit, lend):
+    i = 0
+    x0 = 0
+    x1 = 1
+    x = x1 - ((x1 - x0) / (f(x1, coef) - f(x0, coef))) * f(x1, coef)
+    print("x =", round(x, digit), end='')
+    if lend < len(str(round(x, digit))):
+        lend = len(str(round(x, digit)))
+    elif lend > len(str(round(x, digit))):
+        print("0" * (lend - len(str(round(x, digit)))), end='')
+    print("")
+    while round(f(x, coef), digit) != 0:
+        i += 1
+        if i == 1000:
+            return
+        x0 = x1
+        x1 = x
+        try:
+            x = x1 - ((x1 - x0) / (f(x1, coef) - f(x0, coef))) * f(x1, coef)
+        except:
+            exit
+        print("x =", round(x, digit), end='')
+        if lend < len(str(round(x, digit))):
+            lend = len(str(round(x, digit)))
+        elif lend > len(str(round(x, digit))):
+            print("0" * (lend - len(str(round(x, digit)))), end='')
+        print("")
+
+
+if len(sys.argv) == 2 and sys.argv[1] == "-h":
+    print("USAGE\n    ./105torus opt a0 a1 a2 a3 a4 n\n\nDESCRIPTION\n    opt       method option:\n                  1 for the bisection method\n                  2 for Newton’s method\n                  3 for the secant method\n    a[0-4] coefficients of the equation\n    n precision (the application of the polynomial to the solution should be smaller than 10ˆ-n)")
+    exit(0)
+try:
+    coef = [int(sys.argv[6]), int(sys.argv[5]), int(sys.argv[4]), int(sys.argv[3]), int(sys.argv[2])]
+    mode = int(sys.argv[1])
+    digit = int(sys.argv[7])
+    if mode != 1 and mode != 2 and mode != 3:
+        mode = int("ok")
+    if digit < 0:
+        digit = int("ok")
+except:
+    print("Incorrect arguments")
+    exit(84)
+try:
+    if mode == 1:
+        x = bisection(0, 1, coef, digit, 0, 1)
+    if mode == 2:
+        x = newton(0.5, coef, digit, 0, 1)
+        print("x =", round(x, digit), end='')
+        if round(x, digit) != x and len(str(round(x, digit))) - 2 < digit:
+            print("0" * (digit - len(str(round(x, digit))) + 2))
+        else:
+            print("")
+    if mode == 3:
+        x = sceante(coef, digit, 1)
+except:
+    print("Error")
+    exit(84)
+exit(0)

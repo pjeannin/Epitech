@@ -1,0 +1,183 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 108trigo_2019
+## File description:
+## 108trigo
+##
+
+import sys
+
+def display_matrix(mat, size):
+    longer = 0
+    for i in range (size):
+        for j in range (size - 1):
+            if longer < len(str(round(mat[i][j], 0))) + 3:
+                longer = len(str(round(mat[i][j], 0))) + 3
+    for i in range (size):
+        for j in range (size - 1):
+            print("%.2f\t" % mat[i][j], end='')
+            if len(str(round(mat[i][j], 0))) + 3 + len("\n") - ((len(str(round(mat[i][j], 0))) + 3) % len("\n")) < longer + len("\n") - (longer % len("\n")):
+                print("\t", end='')
+        print("%.2f\n" % mat[i][size - 1], end='')
+
+def matrix_is_incorrect(argv):
+    for i in range (15):
+        if len(argv) - 2 == i ** 2:
+            return 0
+    return 1
+
+def mul_matrix(mat1, mat2, size):
+    res = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    for i in range (size):
+        for j in range (size):
+            for k in range (size):
+                res[i][j] += mat1[i][k] * mat2[k][j]
+    return res
+
+def get_size(argv):
+    for i in range (15):
+        if len(argv) - 2 == i ** 2:
+            return i
+
+def get_matrix(argv):
+    matrix = []
+    size = get_size(argv)
+    for i in range (size):
+        line = []
+        for k in range (size):
+            line.append(int(argv[2 + i * size + k]))
+        matrix.append(line)
+    return matrix, size
+
+def matrix_addition(mat1, mat2, size):
+    mat_res = create_empty_mat(size)
+    for i in range (size):
+        for k in range (size):
+            mat_res[i][k] = mat1[i][k] + mat2[i][k]
+    return mat_res
+
+def matrix_sub(mat1, mat2, size):
+    mat_res = create_empty_mat(size)
+    for i in range (size):
+        for k in range (size):
+            mat_res[i][k] = mat1[i][k] - mat2[i][k]
+    return mat_res
+
+def matrix_one_num_div(matrix, number, size):
+    mat_res = create_empty_mat(size)
+    for i in range (size):
+        for k in range (size):
+            mat_res[i][k] = matrix[i][k] / number
+    return mat_res
+
+def matrix_one_num_mul(matrix, number, size):
+    mat_res = create_empty_mat(size)
+    for i in range (size):
+        for k in range (size):
+            mat_res[i][k] = matrix[i][k] * number
+    return mat_res
+
+def matrix_power(matrix, power, size):
+    if power == 0:
+        return create_id_matrix(size)
+    if power == 1:
+        return (matrix)
+    mat_res = create_empty_mat(size)
+    for i in range (size):
+        for k in range (size):
+            mat_res[i][k] = matrix[i][k]
+    for i in range (power - 1):
+        mat_res = mul_matrix(mat_res, matrix, size)
+    return mat_res
+
+def fact(n):
+    if n < 2:
+        return 1
+    else:
+        return n * fact(n - 1)
+
+def create_id_matrix(size):
+    mat = []
+    for i in range (size):
+        line = []
+        for j in range (size):
+            line.append(0)
+        mat.append(line)
+        mat[i][i] = 1
+    return mat
+
+def create_empty_mat(size):
+    mat = []
+    for i in range (size):
+        line = []
+        for j in range (size):
+            line.append(0)
+        mat.append(line)
+    return mat
+
+
+def compute_exp(mat, size):
+    new_mat = create_empty_mat(size)
+    for i in range (100):
+        tmp = matrix_power(mat, i, size)
+        tmp2 = fact(i)
+        tmp = matrix_one_num_div(tmp, tmp2, size)
+        new_mat = matrix_addition(new_mat, tmp, size)
+    return new_mat
+
+def compute_cos(mat, size):
+    new_mat = create_empty_mat(size)
+    for i in range (100):
+        tmp = matrix_power(mat, 2 * i, size)
+        tmp = matrix_one_num_div(tmp, fact(2 * i), size)
+        new_mat = matrix_addition(new_mat, matrix_one_num_mul(tmp, (-1) ** i, size), size)
+    return new_mat
+
+def compute_sin(mat, size):
+    new_mat = create_empty_mat(size)
+    for i in range (100):
+        tmp = matrix_power(mat, 2 * i + 1, size)
+        tmp = matrix_one_num_div(tmp, fact(2 * i + 1), size)
+        new_mat = matrix_addition(new_mat, matrix_one_num_mul(tmp, (-1) ** i, size), size)
+    return new_mat
+
+def compute_cosh(mat, size):
+    new_mat = create_empty_mat(size)
+    for i in range (100):
+        tmp = matrix_power(mat, 2 * i, size)
+        tmp = matrix_one_num_div(tmp, fact(2 * i), size)
+        new_mat = matrix_addition(new_mat, tmp, size)
+    return new_mat
+
+def compute_sinh(mat, size):
+    new_mat = create_empty_mat(size)
+    for i in range (100):
+        tmp = matrix_power(mat, 2 * i + 1, size)
+        tmp = matrix_one_num_div(tmp, fact(2 * i + 1), size)
+        new_mat = matrix_addition(new_mat, tmp, size)
+    return new_mat
+
+try:
+    if len(sys.argv) < 3:
+        b = 4/0
+    if sys.argv[1] != "EXP" and sys.argv[1] != "COS" and sys.argv[1] != "SIN" and sys.argv[1] != "COSH" and sys.argv[1] != "SINH":
+        b = 4/0
+    if matrix_is_incorrect(sys.argv):
+        b = 4/0
+    matrix, size = get_matrix(sys.argv)
+    if sys.argv[1] == "EXP":
+        display_matrix(compute_exp(matrix, size), size)
+    if sys.argv[1] == "COSH":
+        display_matrix(compute_cosh(matrix, size), size)
+    if sys.argv[1] == "SINH":
+        display_matrix(compute_sinh(matrix, size), size)
+    if sys.argv[1] == "SIN":
+        display_matrix(compute_sin(matrix, size), size)
+    if sys.argv[1] == "COS":
+        display_matrix(compute_cos(matrix, size), size)
+except:
+    print("Error")
+    exit(84)
+exit(0)

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Task - {{task['title']}}
+{% endblock %}
+
+{% block content %}
+<main role="main" class="container-sm small-container">
+    <div class="col">
+        <div class="card w-100" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-success">{{ task['title'] }} ({{ task['status'] }})</h5>
+                <a href="/tasks/{{task['task_id']}}/edit" class="btn btn-primary mt-3">Edit</a>
+                <a href="/tasks/{{task['task_id']}}/delete" class="btn btn-danger float-right mt-3">Delete</a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

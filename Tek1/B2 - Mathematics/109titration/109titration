@@ -1,0 +1,144 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 109titration_2019
+## File description:
+## 109titration
+##
+
+import sys
+
+def convert_vals(lines_tab):
+    val_tab = []
+    for line in lines_tab:
+        tab_cell = []
+        new_val = ""
+        for char in line:
+            if char == ';':
+                new_val = float(new_val)
+                tab_cell.append(new_val)
+                new_val = ""
+            elif char == '\n':
+                continue
+            else:
+                new_val += char
+        new_val = float(new_val)
+        tab_cell.append(new_val)
+        val_tab.append(tab_cell)
+    return (val_tab)
+
+def sort_vals(val_tab):
+    i = 0
+    while i < (len(val_tab) - 1):
+        if val_tab[i][0] > val_tab[i + 1][0]:
+            val_tab[i], val_tab[i + 1] = val_tab[i + 1], val_tab[i]
+            i = 0
+        i += 1
+    return (val_tab)
+
+def check_vals(val_tab):
+    if len(val_tab) < 6:
+        b = 4/0
+    for elem in val_tab:
+        if elem[1] > 14:
+            b = 4/0
+    for i in range(len(val_tab) - 1):
+        if val_tab[i][0] == val_tab[i + 1][0]:
+            b = 4/0
+
+def compute_after(val_tab, i):
+    return_val = (val_tab[i + 1][1] - val_tab[i][1]) / (val_tab[i + 1][0] - val_tab[i][0])
+    return (return_val)
+
+def compute_before(val_tab, i):
+    return_val = (val_tab[i][1] - val_tab[i - 1][1]) / (val_tab[i][0] - val_tab[i - 1][0])
+    return return_val
+
+def compute_derivative(val_tab):
+    ret_tab = []
+    for i in range (1, len(val_tab) - 1):
+        cur_val = []
+        cur_val.append(val_tab[i][0])
+        derivative_number = (compute_before(val_tab, i) * (val_tab[i + 1][0] - val_tab[i][0]) + compute_after(val_tab, i) * (val_tab[i][0] - val_tab[i - 1][0])) / (val_tab[i + 1][0] - val_tab[i - 1][0])
+        cur_val.append(derivative_number)
+        ret_tab.append(cur_val)
+    return (ret_tab)
+
+def find_max_point(val_tab):
+    ret_val = [0, 0]
+    for elem in val_tab:
+        if elem[1] > ret_val[1]:
+            ret_val = elem
+    return ret_val
+
+def compute_estimate_derivative(val_tab, eq_point):
+    ret_tab = []
+    start = 0
+    for i in range(len(val_tab)):
+        if val_tab[i][0] == eq_point[0]:
+            start = i - 1
+    for i in range(start, start + 2):
+        x = val_tab[i][0]
+        a = (val_tab[i + 1][1] - val_tab[i][1]) / (val_tab[i + 1][0] - val_tab[i][0])
+        b = val_tab[i + 1][1] - a * val_tab[i + 1][0]
+        while (x < val_tab[i + 1][0]):
+            cell = []
+            cell.append(x)
+            cell.append(a * x + b)
+            ret_tab.append(cell)
+            x += 0.1
+    return (ret_tab)
+
+def find_final_eq_point(val_tab, old_eq_point):
+    ret_val = [20, 20]
+    for i in range(len(val_tab)):
+        if old_eq_point[0] == val_tab[i][0]:
+            index = i
+    if index < 2:
+        index = 2
+    for i in range (index - 2, len(val_tab) - 1):
+        if val_tab[i][1] * val_tab[i + 1][1] < 0:
+            if abs(val_tab[i][1]) < abs(val_tab[i + 1][1]):
+                ret_val = val_tab[i]
+            else:
+                ret_val = val_tab[i + 1]
+    return ret_val
+
+try:
+    if len(sys.argv) == 2 and sys.argv[1] == "-h":
+        print("USAGE\n\t./109titration file\n\nDESCRIPTION\n\tfile\ta csv file containing “vol;ph” lines")
+        exit(0)
+    if len(sys.argv) != 2 or len(sys.argv[1]) < 4 or (sys.argv[1][-1] != 'v' and sys.argv[1][-2] != 's' and sys.argv[1][-3] != 'c' and sys.argv[1][-4] != '.'):
+        b = 4/0
+    file = open(sys.argv[1], mode='r')
+    lines = file.readlines()
+    for line in lines:
+        if ";" not in line:
+            b = 4/0
+    vals = sort_vals(convert_vals(lines))
+    check_vals(vals)
+except:
+    print("Bad Input file")
+    exit(84)
+try:
+    print("Derivative:")
+    derivative = compute_derivative(vals)
+    for elem in derivative:
+        print("%.1f" % elem[0], "ml ->", "%.2f" % elem[1])
+    eq_point = find_max_point(derivative)
+    print("\nEquivalence point at %.1f ml\n\nSecond derivative:" % eq_point[0])
+    second_derivative = compute_derivative(derivative)
+    for elem in second_derivative:
+        print("%.1f" % elem[0], "ml ->", "%.2f" % elem[1])
+    print("\nSecond derivative estimated:")
+    eq_point = find_final_eq_point(second_derivative, eq_point)
+    second_derivative_estimate = compute_estimate_derivative(second_derivative, eq_point)
+    for elem in second_derivative_estimate:
+        print("%.1f" % elem[0], "ml ->", "%.2f" % elem[1])
+    final_eq_point = find_final_eq_point(second_derivative_estimate, eq_point)
+    print("\nEquivalence point at %.1f ml" % final_eq_point[0])
+except:
+    print("¡ Error !")
+    exit(84)
+exit(0)

@@ -1,0 +1,68 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2020
+## 106bombyx
+## File description:
+## 106bombyx
+##
+
+import sys
+
+def display(n, digit):
+    do_count = 0
+    counter = 0
+    print(round(n, digit), end='')
+    for k in range(len(str(round(n, digit)))):
+        if (str(round(n, digit))[k] == "."):
+            do_count = 1
+        elif do_count == 1:
+            counter += 1
+    if counter == 1:
+        print("0", end='')
+    if do_count == 0:
+        print(".00", end='')
+
+try:
+    if (len(sys.argv) == 3):
+        gen = int(sys.argv[1])
+        k = float(sys.argv[2])
+        if (len(str(k)) > 4 or k > 4 or gen <= 0):
+            exit()
+    elif (len(sys.argv) == 4):
+        gen = int(sys.argv[1])
+        i0 = int(sys.argv[2])
+        i1 = int(sys.argv[3])
+        if (gen <= 0 or i0 <= 0 or i1 <= i0):
+            exit()
+    else:
+        exit()
+except:
+    print("Error")
+    exit(84)
+lend = len((str(gen))) + 3
+if (len(sys.argv) == 3):
+    try:
+        for i in range(100):
+            print(i + 1, end=' ')
+            display(gen, 2)
+            print("")
+            gen = k * gen * (1000 - gen) / 1000
+    except:
+        print("Error")
+        exit(84)
+if (len(sys.argv) == 4):
+    try:
+        k = 1
+        for l in range(301):
+            for i in range(i1):
+                if i >= i0 - 1:
+                    display(k, 2)
+                    print(" ", end='')
+                    display(gen, 2)
+                    print("")
+                gen = k * gen * (1000 - gen) / 1000
+            k += 0.01
+    except:
+        print("error")
+exit(0)

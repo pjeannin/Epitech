@@ -1,0 +1,134 @@
+#!/usr/bin/python3
+
+import sys
+import math
+
+def compute_roots(a, b, delta):
+    s1 = (- b - math.sqrt(delta)) / (2 * a)
+    s2 = (- b + math.sqrt(delta)) / (2 * a)
+    return s1, s2
+
+def compute_one_root(a, b):
+    return((-b) / (2 * a))
+
+def display_param(param):
+    print("Line passing through the point (", end='')
+    print(int(param[0]), end='')
+    print(",", int(param[1]), end='')
+    print(",", int(param[2]), end='')
+    print(") and parallel to the vector (", end='')
+    print(int(param[3]), end='')
+    print(",", int(param[4]), end='')
+    print(",", int(param[5]), end='')
+    print(")")
+
+def print_0(num):
+    num = str(num)
+    len_num = len(num)
+    if num[0] == '-':
+        len_num -= 1
+    while len_num < 5:
+        print("0", end='')
+        len_num += 1
+
+def compute_intersection(a, b, c, delta):
+    if delta > 0:
+        print("2 intersection points:")
+        s1, s2 = compute_roots(a, b, delta)
+        print("(", end='')
+        print(round(param[0] + s2 * param[3], 3), end='')
+        print_0(round(param[0] + s2 * param[3], 3))
+        print(",", round(param[1] + s2 * param[4], 3), end='')
+        print_0(round(param[1] + s2 * param[4], 3))
+        print(",", round(param[2] + s2 * param[5], 3), end='')
+        print_0(round(param[2] + s2 * param[5], 3))
+        print(")")
+        print("(", end='')
+        print(round(param[0] + s1 * param[3], 3), end='')
+        print_0(round(param[0] + s1 * param[3], 3))
+        print(",", round(param[1] + s1 * param[4], 3), end='')
+        print_0(round(param[1] + s1 * param[4], 3))
+        print(",", round(param[2] + s1 * param[5], 3), end='')
+        print_0(round(param[2] + s1 * param[5], 3))
+        print(")")
+    elif delta == 0:
+        print("1 intersection point:")
+        s = compute_one_root(a, b)
+        print("(", end='')
+        print(round(param[0] + s * param[3], 3), end='')
+        print_0(round(param[0] + s * param[3], 3))
+        print(",", round(param[1] + s * param[4], 3), end='')
+        print_0(round(param[1] + s * param[4], 3))
+        print(",", round(param[2] + s * param[5], 3), end='')
+        print_0(round(param[2] + s * param[5], 3))
+        print(")")
+    else:
+        print("No intersection point.")
+
+def sphere(param):
+    print("Sphere of radius", int(param[6]))
+    display_param(param)
+    a = param[3] ** 2 + param[4] ** 2 + param[5] ** 2
+    b = 2 * param[3] * param[0] + 2 * param[4] * param[1] + 2 * param[5] * param[2]
+    c = param[0] ** 2 + param[1] ** 2 + param[2] ** 2 - param[6] ** 2
+    delta = b ** 2 - 4 * a * c
+    compute_intersection(a, b, c, delta)
+
+def cylinder(param):
+    print("Cylinder of radius", int(param[6]))
+    display_param(param)
+    if param[3] == param[4] == 0:
+        if math.sqrt(param[0] ** 2 + param[1] ** 2) == param[6] and param[3] == 0 and param[4] == 0:
+            print("There is an infinit number of intersection points.")
+            return
+    a = param[3] ** 2 + param[4] ** 2
+    b = 2 * param[3] * param[0] + 2 * param[4] * param[1]
+    c = param[0] ** 2 + param[1] ** 2 - param[6] ** 2
+    delta = b ** 2 - 4 * a * c
+    if param[3] == param[4] == 0:
+        delta = -1
+    compute_intersection(a, b, c, delta)
+
+def cone(param):
+    print("Cone with a", int(param[6]), "degree angle")
+    param[6] = (3.1415926535 / 2) - (3.1415926535 * param[6] / 180)
+    display_param(param)
+    if (param[0] ** 2 + param[1] ** 2) == (param[2] ** 2) * (math.tan(param[6]) ** 2) and ((param[0] - param[3]) ** 2 + (param[1] - param[4]) ** 2) == ((param[2] - param[5]) ** 2) * (math.tan(param[6]) ** 2):
+        print("There is an infinit number of intersection points.")
+        return
+    a = param[3] ** 2 + param[4] ** 2 - (param[5] ** 2) / (math.tan(param[6]) ** 2)
+    b = (2 * param[0] * param[3] + 2 * param[1] * param[4]) - (2 * param[2] * param[5]) / ((math.tan(param[6])) ** 2)
+    c = (param[0] ** 2 + param[1] ** 2) - (param[2] ** 2) / ((math.tan(param[6])) ** 2)
+    delta = b ** 2 - 4 * a * c
+    compute_intersection(a, b, c, delta)
+
+if len(sys.argv) == 2 and sys.argv[1] == "-h":
+    print("USAGE\n    ./104intersection opt xp yx zp xv yv zv p\n\nDESCRIPTION\n    opt             surface option: 1 for a sphere, 2 for a cylinder, 3 for a cone\n    (xp, yp, zp)    coordinates of a point by wich the light ray passes through\n    (xv, yx, zv)    coordinates of a vector  parallel to the light ray\n    p               parameter: radius of the sphere, radius of the cylinder, or\n                    angle formed by the cone and the Z-axis")
+    exit(0)
+if len(sys.argv) != 9:
+    print("Need more arguments")
+    exit (84)
+param = []
+if sys.argv[1] != "1" and sys.argv[1] != "2" and sys.argv[1] != "3":
+    print("Incorrect Flags")
+    exit(84)
+try:
+    for i in range (2, 9):
+        param.append(float(sys.argv[i]))
+    if param[6] < 0:
+        exit(84)
+    if param[6] >= 90 and sys.argv[1] == "3":
+        exit(84)
+    if param[3] == 0 and param[4] == 0 and param[5] == 0:
+        exit(84)
+
+except:
+    print("Incorrect arguments")
+    exit(84)
+if sys.argv[1] == "1":
+    sphere(param)
+if sys.argv[1] == "2":
+    cylinder(param)
+if sys.argv[1] == "3":
+    cone(param)
+exit(0)
