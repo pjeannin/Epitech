@@ -1,0 +1,26 @@
+hi
+picture:../ASCII Art/rex.txt
+nothing special
+CU
+nothing special
+CU
+nothing special
+CU
+nothing special
+CU
+picture:../ASCII Art/bo_beep.txt
+picture:../ASCII Art/mr_potato.txt
+nothing special
+CU
+nothing special
+CU
+nothing special
+CU
+
+nothing special
+CU
+nothing special
+CU
+nothing special
+CUnothing special
+CU
