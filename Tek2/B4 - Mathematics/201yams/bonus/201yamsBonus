@@ -1,0 +1,169 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2021
+## B-MAT-400-STG-4-1-201yams-pierre.jeannin
+## File description:
+## 201yams
+##
+
+import sys
+
+combinatinPossibilities = (["yams_1", "yams_2", "yams_3", "yams_4", "yams_5", "yams_6", "four_1", "four_2", "four_3", "four_4", "four_5", "four_6", "three_1", "three_2", "three_3", "three_4", "three_5", "three_6", "pair_1", "pair_2", "pair_3", "pair_4", "pair_5", "pair_6", "straight_5", "straight_6", "full_1_2", "full_1_3", "full_1_4", "full_1_5", "full_1_6", "full_2_1", "full_2_3", "full_2_4", "full_2_5", "full_2_6", "full_3_1", "full_3_2", "full_3_4", "full_3_5", "full_3_6", "full_4_1", "full_4_2", "full_4_3", "full_4_5", "full_4_6", "full_5_1", "full_5_2", "full_5_3", "full_5_4", "full_5_6", "full_6_1", "full_6_2", "full_6_3", "full_6_4", "full_6_5"], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        F = 1
+        for k in range(2,n+1):
+            F = F * k
+        return F
+
+def binomialeCoef(n, k):
+    return (factorial(n) / (factorial(k) * factorial(n - k)))
+
+def binomiale(n, k, p):
+    return binomialeCoef(n, k) * pow(p, k) * pow(1 - p, n - k)
+
+def yams(wanted, dices):
+    n = 0
+    k = 0
+    res = 0
+    for dice in dices:
+        if dice != wanted or dice == 0:
+            n += 1
+    k = n
+    if k == 0:
+            res = 100
+    else:
+        res = round(binomiale(n, k, 1/6) * 100, 2)
+    return res
+
+def four(wanted, dices):
+    n = 0
+    k = 0
+    for dice in dices:
+        if dice != wanted or dice == 0:
+            n += 1
+    k = n
+    if k <= 1:
+        res = 100
+    else:
+        res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6)) * 100, 2)
+    return res
+
+def three(wanted, dices):
+    n = 0
+    k = 0
+    for dice in dices:
+        if dice != wanted or dice == 0:
+            n += 1
+    k = n
+    if k <= 2:
+        res = 100
+    else:
+        res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6) + binomiale(n, k - 2, 1/6)) * 100, 2)
+    return res
+
+def pair(wanted, dices):
+    n = 0
+    k = 0
+    for dice in dices:
+        if dice != wanted or dice == 0:
+            n += 1
+    k = n
+    if k <= 3:
+        res = 100
+    else:
+        res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6) + binomiale(n, k - 2, 1/6) + binomiale(n, k - 3, 1/6)) * 100, 2)
+    return res
+
+def full(wanted, otherWanted, dices):
+    countFirst = 0
+    countSecond = 0
+    for dice in dices:
+        if dice == wanted and countFirst < 3:
+            countFirst += 1
+        elif dice == otherWanted and countSecond < 2:
+            countSecond += 1
+    res = binomialeCoef(2 - countSecond + 3 - countFirst, 3 - countFirst) * binomialeCoef(2 - countSecond, 2 - countSecond) / pow(6, 2 - countSecond + 3 - countFirst)
+    res  = round(res * 100, 2)
+    return res
+
+def straight(wanted, dices):
+    n = 5
+    for i in range(5):
+        if wanted - i in dices:
+            n -= 1
+    k = n
+    if k == 0:
+        res = 100
+    else:
+        res = round(binomiale(n, k, 1/6) * 100, 2)
+    return res
+
+
+
+def checkCombinaison(combination):
+    if int(combination[-1]) < 0 or int(combination[-1]) > 6:
+        b = 4/0
+    if not(len(combination) == 6 and "pair_" in combination) and not(len(combination) == 7 and "three_" in combination) and not(len(combination) == 6 and "four_" in combination) and not(len(combination) == 10 and "straight_" in combination) and not(len(combination) == 6 and "yams_" in combination) and not(len(combination) == 8 and "full_" in combination):
+        print(combination)
+        b = 4/0
+    if "full" in combination:
+        if int(combination[5]) < 0 or int(combination[5]) > 6 or combination[6] != '_' or int(combination[5]) == int(combination[-1]):
+            b = 4/0
+    if "straight" in combination:
+        if int(combination[-1]) != 6 and int(combination[-1]) != 5:
+            b = 4/0
+
+def addGreaterNotInList(src, dst):
+    i = -1
+    for k in range(len(src[0])):
+        if i == -1 and src[0][k] not in dst[0]:
+            i = k
+        elif src[1][i] < src[1][k] and src[0][k] not in dst[0]:
+            i = k
+    dst[0].append(src[0][i])
+    dst[1].append(src[1][i])
+    return dst
+
+
+def testCombinaition(mode, dices):
+    try:
+        checkCombinaison(mode)
+        if "yams" in mode:
+            proba = yams(int(mode[5]), dices)
+        elif "four" in mode:
+            proba = four(int(mode[5]), dices)
+        elif "three" in mode:
+            proba = three(int(mode[6]), dices)
+        elif "pair" in mode:
+            proba = pair(int(mode[5]), dices)
+        elif "full" in mode:
+            proba = full(int(mode[5]), int(mode[7]), dices)
+        else:
+            proba = straight(int(mode[9]), dices)
+        return proba
+    except:
+        print("Oops ! Something went wrong. Try again.")
+        exit(84)
+
+try:
+    finalTab = ([], [])
+    dices = [int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])]
+    for dice in dices:
+        if dice < 0 or dice > 6:
+            b = 4/0
+    for i in range(len(combinatinPossibilities[0])):
+        combinatinPossibilities[1][i] = testCombinaition(combinatinPossibilities[0][i], dices)
+    for i in range(15):
+        finalTab = addGreaterNotInList(combinatinPossibilities, finalTab)
+    print("Les 15 meilleurs choix sont :")
+    for i in range(len(finalTab[0])):
+        print("    -", finalTab[0][i], ":", finalTab[1][i], "%")
+except:
+    print("Oops !! C'est cassé.")
+    exit(84)
+exit(0)
