@@ -36,6 +36,8 @@ def yams(wanted, dices):
             res = 100
     else:
         res = round(binomiale(n, k, 1/6) * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "yams:", res, end='')
     print("%")
 
@@ -50,6 +52,8 @@ def four(wanted, dices):
         res = 100
     else:
         res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6)) * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "four-of-a-kind:", res, end='')
     print("%")
 
@@ -64,6 +68,8 @@ def three(wanted, dices):
         res = 100
     else:
         res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6) + binomiale(n, k - 2, 1/6)) * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "three-of-a-kind:", res, end='')
     print("%")
 
@@ -78,6 +84,8 @@ def pair(wanted, dices):
         res = 100
     else:
         res = round((binomiale(n, k, 1/6) + binomiale(n, k - 1, 1/6) + binomiale(n, k - 2, 1/6) + binomiale(n, k - 3, 1/6)) * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "pair:", res, end='')
     print("%")
 
@@ -91,6 +99,8 @@ def full(wanted, otherWanted, dices):
             countSecond += 1
     res = binomialeCoef(2 - countSecond + 3 - countFirst, 3 - countFirst) * binomialeCoef(2 - countSecond, 2 - countSecond) / pow(6, 2 - countSecond + 3 - countFirst)
     res  = round(res * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "full of", otherWanted, end='')
     print(":", res, end='')
     print("%")
@@ -105,18 +115,19 @@ def straight(wanted, dices):
         res = 100
     else:
         res = round(binomiale(n, k, 1/6) * 100, 2)
+    if res - int(res) == 0:
+        res = str(int(res)) + ".00"
     print(wanted, "straight:", res, end='')
     print("%")
 
 
-
 def checkCombinaison(combination):
-    if int(combination[-1]) < 0 or int(combination[-1]) > 6:
+    if int(combination[-1]) < 1 or int(combination[-1]) > 6:
         b = 4/0
     if not(len(combination) == 6 and "pair_" in combination) and not(len(combination) == 7 and "three_" in combination) and not(len(combination) == 6 and "four_" in combination) and not(len(combination) == 10 and "straight_" in combination) and not(len(combination) == 6 and "yams_" in combination) and not(len(combination) == 8 and "full_" in combination):
         b = 4/0
     if "full" in combination:
-        if int(combination[5]) < 0 or int(combination[5]) > 6 or combination[6] != '_' or int(combination[5]) == int(combination[-1]):
+        if int(combination[5]) < 1 or int(combination[5]) > 6 or combination[6] != '_' or int(combination[5]) == int(combination[-1]):
             b = 4/0
     if "straight" in combination:
         if int(combination[-1]) != 6 and int(combination[-1]) != 5:
@@ -125,6 +136,9 @@ def checkCombinaison(combination):
 if len(sys.argv) == 2 and sys.argv[1] == "-h":
     print("USAGE\n    ./201yams d1 d2 d3 d4 d5 c\n\nDESCRIPTION\n    d1      value of the first die (0 if not thrown)\n    d2      value of the second die (0 if not thrown)\n    d3      value of the third die (0 if not thrown)\n    d4      value of the fourth die (0 if not thrown)\n    d5      value of the fifth die (0 if not thrown)\n    c       expected combination")
     exit(0)
+elif len(sys.argv) != 7:
+    print("Too many arguments.")
+    exit(84)
 try:
     propa = 0
     dices = [int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])]
