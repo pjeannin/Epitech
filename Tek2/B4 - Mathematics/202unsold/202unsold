@@ -1,0 +1,143 @@
+#!/usr/bin/python3
+
+import sys
+import math
+
+separator = "--------------------------------------------------------------------------------"
+
+def formatNumber(n):
+    strn = str(round(n, 3))
+    while (len(strn) < 5):
+        strn += "0"
+    return strn
+
+def formatAverage(n):
+    strn = str(round(n, 1))
+    count = False
+    counter = 0
+    for char in strn:
+        if count:
+            counter += 1
+        if char == '.':
+            count = True
+    if count == False:
+        strn += "."
+    while (counter < 1):
+        strn += "0"
+        counter += 1
+    return strn
+
+def computeProb(a, b, x, y):
+    return ((a - x) * (b - y))/(((5 * a) - 150) * ((5 * b) - 150))
+
+def getZTab(firstTab):
+    new = []
+    for i in range (1, 10):
+        tmp = 0
+        for j in range(5):
+            for k in range(5):
+                if ((j + 1) * 10 + (k + 1) * 10 == (i + 1) * 10):
+                    tmp += firstTab[j][k]
+        new.append(tmp)
+    return new
+
+def getTab(a, b):
+    tab = []
+    for y in range (10, 60, 10):
+        tmpTab = []
+        tmp = 0
+        for x in range (10, 60, 10):
+            tmpTab.append(computeProb(a, b, x, y))
+            tmp += tmpTab[-1]
+        tmpTab.append(tmp)
+        tab.append(tmpTab)
+    sumTab = []
+    for x in range(6):
+        tmp = 0
+        for y in range(5):
+            tmp += tab[y][x]
+        sumTab.append(tmp)
+    tab.append(sumTab)
+    return tab
+
+def getXaverage(tab):
+    average = 0
+    for i in range(5):
+        average += tab[5][i] * ((i + 1) * 10)
+    return average
+
+def getYaverage(tab):
+    average = 0
+    for i in range(5):
+        average += tab[i][5] * ((i + 1) * 10)
+    return average
+
+def getZaverage(tab):
+    average = 0
+    for i in range(9):
+        average += tab[i] * ((i + 2) * 10)
+    return average
+
+def getXvariance(average, tab):
+    var = 0
+    for i in range(5):
+        var += math.pow(average - (1 + i) * 10, 2) * tab[5][i]
+    return var
+
+def getYvariance(average, tab):
+    var = 0
+    for i in range(5):
+        var += math.pow(average - (1 + i) * 10, 2) * tab[i][5]
+    return var
+
+def getZvariance(average, tab):
+    var = 0
+    for i in range(9):
+        var += math.pow(average - (2 + i) * 10, 2) * tab[i]
+    return var
+
+if len(sys.argv) == 2 and sys.argv[1] == '-h':
+    print("USAGE\n    ./202unsold a b\n\nDESCRIPTION\n    a       constant computed from past results\n    b       constant computed from past results")
+    exit(0)
+elif len(sys.argv) != 3:
+    print("Use ./202unsold -h to know how to use this program.")
+    exit(84)
+try:
+    a = int(sys.argv[1])
+    b = int(sys.argv[2])
+    if a <= 50 or b <= 50:
+        b = 4/0
+    print(separator)
+    print("        X=10    X=20    X=30    X=40    X=50    Y law")
+    tab = getTab(a, b)
+    for x in range (5):
+        print("Y=" + str((x + 1) * 10), end='')
+        for y in range (6):
+            print(("   ", "    ")[y == 0] + formatNumber(tab[x][y]), end='')
+        print("")
+    print("X law", end='')
+    for x in range(6):
+        print("   " + formatNumber(tab[5][x]), end='')
+    print("")
+    print(separator)
+    print("z       20      30      40      50      60      70      80      90      100")
+    zTab = getZTab(tab)
+    print("p(Z=z)", end='')
+    for x in range(9):
+        print(("   ", "  ")[x == 0] + formatNumber(zTab[x]), end='')
+    print("")
+    print(separator)
+    Xaverage = getXaverage(tab)
+    Yaverage = getYaverage(tab)
+    Zaverage = getZaverage(zTab)
+    print("expected value of X:    " + formatAverage(Xaverage))
+    print("variance of X:          " + formatAverage(getXvariance(Xaverage, tab)))
+    print("expected value of Y:    " + formatAverage(Yaverage))
+    print("variance of Y:          " + formatAverage(getYvariance(Yaverage, tab)))
+    print("expected value of Z:    " + formatAverage(Zaverage))
+    print("variance of Z:          " + formatAverage(getZvariance(Zaverage, zTab)))
+    print(separator)
+except:
+    print("Use ./202unsold -h to know how to use this program.")
+    exit(84)
+exit(0)
