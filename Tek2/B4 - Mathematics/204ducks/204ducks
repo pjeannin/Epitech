@@ -1,0 +1,78 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2021
+## B-MAT-400-STG-4-1-204ducks-pierre.jeannin
+## File description:
+## 204ducks
+##
+
+import sys
+import math
+
+def primitiv(a, x):
+    return (- 1 / 2) * math.exp(- 4 * x) * (a*(2 * math.exp(x) + 1) * (math.exp(x) - 1) ** 2 + 4 * math.exp(2 * x) - 2)
+
+def averagePrimitiv(a, x):
+    return ((1 / 8) * math.exp(-4 * x)) * ((-a) * (4 * x + 8 * math.exp(3 * x) * (x + 1) - 6 * math.exp(2 * x) * (2 * x + 1) + 1) + 8 * x - 8 * math.exp(2 * x) * (2 * x + 1) + 2)
+
+def variancePrimitiv(a, b, x):
+    return (1 / 16) * math.exp(-4 * x) * (2 * (b ** 2 * (8 - 16 * math.exp(2 * x)) + 4 * b * (-4 * x + math.exp(2 * x) * (8 * x + 4) - 1) + 8 * x ** 2 - 8 * math.exp(2 * x) * (2 * x ** 2 + 2 * x + 1) + 4 * x + 1) - a * (8 * b ** 2 * ( 2 * math.exp(x) + 1) * (math.exp(x) - 1) ** 2 - 4 * b * (4 * x + 8 * math.exp(3 * x) * (x + 1) - 6 * math.exp(2 * x) * (2 * x + 1) + 1) + 8 * x ** 2 + 16 * math.exp(3 * x) * (x ** 2 + 2 * x + 2) - 12 * math.exp(2 * x) * (2 * x ** 2 + 2 * x + 1) + 4 * x + 1))
+
+def formatTime(number):
+    return str(int(number)) + "m " + ("0" if len(str(int(round((number - int(number)) * 60, 0)))) == 1 else "") + str(int(round((number - int(number)) * 60, 0))) + "s"
+
+def formatNumber(number, n):
+    start = False
+    count = 0
+    string = str(number)
+    for c in string:
+        if start == False:
+            if c == '.':
+                start = True
+        else:
+            count += 1
+    if count == 0:
+        string += '.'
+    while count < n:
+        string += '0'
+        count += 1
+    return string
+
+def computeAverage(a):
+    return (averagePrimitiv(a, 200) - averagePrimitiv(a, 0))
+
+def computeStandardDeviance(a, b):
+    return math.sqrt(variancePrimitiv(a, b, 200) - variancePrimitiv(a, b, 0))
+
+def findTime(a, value):
+    i = 0.0
+    while (primitiv(a, i) - primitiv(a, 0)) < value:
+        i += 0.0001
+    return i
+
+def computeValue(a, value):
+    return primitiv(a, value) - primitiv(a, 0)
+
+if len(sys.argv) != 2:
+    print("Incorrect number of arguments. Please use ./204dicks -h for more explainations")
+    exit(84)
+if sys.argv[1] == "-h":
+    print("USAGE\n\t./204ducks a\n\nDESCRIPTION\n\ta\t\tconstant")
+    exit(0)
+try:
+    a = float(sys.argv[1])
+except:
+    print("Wring type for 'a'. It should be a floating point number between 0 and 2.5")
+    exit(84)
+if a < 0 or a > 2.5:
+    print("Wring type for 'a'. It should be a floating point number between 0 and 2.5")
+    exit(84)
+average = computeAverage(a)
+print("Average return time: " + formatTime(average))
+print("Standard deviation: " + formatNumber(round(computeStandardDeviance(a, average), 3), 3))
+print("Time after which 50% of the ducks are back: " + formatTime(findTime(a, 0.5)))
+print("Time after which 99% of the ducks are back: " + formatTime(findTime(a, 0.99)))
+print("Percentage of ducks back after 1 minute: " + formatNumber(round(computeValue(a, 1) * 100, 1), 1) + "%")
+print("Percentage of ducks back after 2 minutes: " + formatNumber(round(computeValue(a, 2) * 100, 1), 1) + "%")
+exit(0)
