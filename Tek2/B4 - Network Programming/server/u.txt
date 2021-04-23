@@ -1,0 +1,5 @@
+tab_len(command) - 1 = 0
+strlen(command[tab_len(command) - 1]) -1 = 4
+command[tab_len(command) - 1][strlen(command[tab_len(command) - 1]) -1] = (13)
+len  = 5
+command[0] = (QUIT)

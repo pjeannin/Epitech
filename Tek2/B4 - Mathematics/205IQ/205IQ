@@ -1,0 +1,96 @@
+#!/usr/bin/python3
+
+##
+## EPITECH PROJECT, 2021
+## test
+## File description:
+## 205IQ
+##
+
+import math
+import sys
+
+def formatNumber(number, n):
+    start = False
+    count = 0
+    string = "{:.5f}".format(round(number, n)) if n == 5 else "{:.1f}".format(round(number, n))
+    for c in string:
+        if start == False:
+            if c == '.':
+                start = True
+        else:
+            count += 1
+    if count == 0:
+        string += '.'
+    while count < n:
+        string += '0'
+        count += 1
+    return string
+
+def getValue(u, s, x):
+    return (math.exp(-((x - u) ** 2) / (2 * s ** 2))) / (s * math.sqrt(2 * math.pi))
+
+def simpson(u, s, n):
+    integral = 0
+    a = n if (n < u) else u
+    b = n if (n > u) else u
+    x = a
+    while x < b:
+        integral += (((x + 0.001) - x) / 6) * (getValue(u, s, x) + 4 * getValue(u, s, (x + (x + 0.001)) / 2) + getValue(u, s, x + 0.001))
+        x += 0.001
+
+    return 0.5 - integral if a == n else 0.5 + integral
+
+def displayAllValues(u, s):
+    for x in range(0, 201):
+        print(x, formatNumber(getValue(u, s, x), 5))
+
+if len(sys.argv) == 2 and sys.argv[1] == "-h":
+    print("USAGE\n\
+\t./205IQ u s [IQ1] [IQ2]\n\
+\n\
+DESCRIPTION\n\
+\tu\t\tmean\n\
+\ts\t\tstandard deviation\n\
+\tIQ1\t\tminimum IQ\n\
+\tIQ2\t\tmaximum IQ")
+    exit(0)
+mode = -1
+try:
+    if len(sys.argv) == 3:
+        u = int(sys.argv[1])
+        s = int(sys.argv[2])
+        mode = 0
+    elif len(sys.argv) == 4:
+        u = int(sys.argv[1])
+        s = int(sys.argv[2])
+        IQ1 = int(sys.argv[3])
+        if IQ1 < 0 or IQ1 > 200:
+            b = 4 / 0
+        mode = 1
+    elif len(sys.argv) == 5:
+        u = int(sys.argv[1])
+        s = int(sys.argv[2])
+        IQ1 = int(sys.argv[3])
+        IQ2 = int(sys.argv[4])
+        if IQ1 < 0 or IQ1 > 200 or IQ2 < 0 or IQ2 > 200 or IQ2 < IQ1:
+            b = 4 / 0
+        mode = 2
+    else:
+        b = 4 / 0
+    if u < 0 or u > 200 or s < 0:
+        b = 4 / 0
+except:
+    print("Bad input ! Please use ./205IQ -h to have more explainations.")
+    exit(84)
+try:
+    if mode == 0:
+        displayAllValues(u, s)
+    elif mode == 1:
+        print(formatNumber(simpson(u, s, IQ1) * 100, 1) + "% of people have an IQ inferior to " + str(IQ1))
+    elif mode == 2:
+        print(formatNumber((simpson(u, s, IQ2) - simpson(u, s, IQ1)) * 100, 1) + "% of people have an IQ between", IQ1, "and", IQ2)
+except:
+    print("Oops an error occured ... Please try again.")
+    exit(84)
+exit(0)

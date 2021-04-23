@@ -1,0 +1,21 @@
+.chipsets:
+input in1
+input in2
+input in3
+input in4
+4071 orGate
+4081 andGate
+output out1
+output out2
+output out3
+
+.links:
+in1:1 orGate:1
+in2:1 orGate:2
+out1:1 orGate:3
+out2:1 orGate:3
+in2:1 andGate:1
+in3:1 andGate:2
+andGate:3 andGate:5
+in4:1 andGate:6
+andGate:4 out3:1

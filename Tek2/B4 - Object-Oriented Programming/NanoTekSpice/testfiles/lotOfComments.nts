@@ -1,0 +1,12 @@
+# Test various comments
+
+## Double comment # again
+.chipsets:# Here too
+input name1    # After a TAB
+output name2   # After some spaces
+#input name1
+      # After whitespaces on an empty line
+.links: # After a space on a delimiter
+name2:1 name1:1# Right after a link
+
+# The ends

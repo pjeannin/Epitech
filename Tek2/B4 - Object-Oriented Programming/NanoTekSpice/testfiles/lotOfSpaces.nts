@@ -1,0 +1,14 @@
+    
+     
+        
+.chipsets:    
+     input    name1    
+
+
+output      name2  
+            
+          
+.links:
+ name2:1          name1:1         
+   
+    

@@ -1,0 +1,9 @@
+configuration-as-code:latest
+role-strategy:latest
+cloudbees-folder:latest
+credentials:latest
+github:latest
+job-dsl:latest
+script-security:latest
+structs:latest
+ws-cleanup:latest
