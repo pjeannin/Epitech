@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bomberman"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\raylib-src\;CMake Files\cmake-build-debug\_deps\raylib-src\src\;CMake Files\cmake-build-debug\_deps\raylib-src\src\external\;CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\;CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\CMake\;CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\;CMake Files\cmake-build-debug\_deps\raylib-src\cmake\;CMake Files\raylib-cpp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bomberman">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/bomberman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp"/>
+					<Add directory="/raylib-cpp"/>
+					<Add directory="/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 bomberman"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bomberman/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/bomberman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp"/>
+					<Add directory="/raylib-cpp"/>
+					<Add directory="/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 bomberman/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raylib-cpp">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/libraylib-cpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 raylib-cpp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raylib-cpp/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/libraylib-cpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 raylib-cpp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/raylib-cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raylib">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/libraylib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add option="-DGL_SILENCE_DEPRECATION"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 raylib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raylib/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/libraylib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORM_DESKTOP"/>
+					<Add option="-DGRAPHICS_API_OPENGL_33"/>
+					<Add option="-DGL_SILENCE_DEPRECATION"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 raylib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw_objlib">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/glfw_objlib.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw_objlib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw_objlib/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/glfw_objlib.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw_objlib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek2/B4\ -\ Year-End-Project\ -\ Indie\ Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/cocoa_init.m.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/cocoa_joystick.m.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/cocoa_monitor.m.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/cocoa_time.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/cocoa_window.m.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/context.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/egl_context.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/init.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/input.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/monitor.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/nsgl_context.m.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/osmesa_context.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/posix_thread.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/vulkan.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_objlib.dir/window.c.o">
+			<Option target="raylib"/>
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/glfw_config.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/core.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_init.m">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_joystick.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_joystick.m">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_monitor.m">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_platform.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_time.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/cocoa_window.m">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/context.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/egl_context.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/egl_context.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/init.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/input.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/internal.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/mappings.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/monitor.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/nsgl_context.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/nsgl_context.m">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/osmesa_context.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/osmesa_context.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/posix_thread.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/posix_thread.h">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/vulkan.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/window.c">
+			<Option target="glfw_objlib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/models.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/physac.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/raudio.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/raudio.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/raylib.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/raymath.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/rlgl.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/shapes.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/text.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/textures.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/utils.c">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/utils.h">
+			<Option target="raylib"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/audioDevice/AudioDevice.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/audioDevice/AudioDevice.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/boundingBox/BoundingBox.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/boundingBox/BoundingBox.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/camera/Camera.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/camera/Camera.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/color/Color.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/color/Color.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/font/Font.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/font/Font.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/functions/Functions.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/functions/Functions.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/image/Image.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/image/Image.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/matrix/Matrix.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/matrix/Matrix.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/mesh/Mesh.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/mesh/Mesh.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/model/Model.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/model/Model.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/modelAnimation/ModeAnimation.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/mouse/Mouse.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/mouse/Mouse.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/music/Music.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/music/Music.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/ray/Ray.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/ray/Ray.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/rayCollision/RayCollision.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/rayCollision/RayCollision.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/rectangle/Rectangle.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/rectangle/Rectangle.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/renderTexture/RenderTexture.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/renderTexture/RenderTexture.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/shader/Shader.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/shader/Shader.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/sound/Sound.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/sound/Sound.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/text/Text.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/text/Text.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/texture/Texture.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/texture/Texture.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/utils/Utils.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/utils/Utils.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/vector/Vector.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/vector/Vector.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/window/Window.cpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/src/window/Window.hpp">
+			<Option target="raylib-cpp"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/Map/Cell.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/Map/Cell.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/Map/Map.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/Map/Map.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/APowerUp.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/APowerUp.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/BombUp.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/BombUp.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/FireUp.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/FireUp.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/HPUp.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/HPUp.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/SpeedUp.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/PowerUp/SpeedUp.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/animation/Animation.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/animation/Animation.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/AI/AI.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/AI/AI.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/Boat.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/Boat.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/IBoatController.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/player/Player.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/boat/player/Player.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/bomb/Bomb.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/bomb/Bomb.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/button/Button.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/button/Button.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/image/Image.c++">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/image/Image.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/mouse/Mouse.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/mouse/Mouse.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/text/Text.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/text/Text.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/transition/fade/Fade.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/components/transition/fade/Fade.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/core/Core.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/core/Core.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/main.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/IScene.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/IScene.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/game/Game.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/game/Game.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/game/PauseMenu.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/menu/Menu.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/menu/Menu.hpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/menu/MenuDraw.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/src/scene/menu/MenuEvent.cpp">
+			<Option target="bomberman"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/CMakeOptions.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/raylib.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\src\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/BuildOptions.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/CompileDefinitions.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/CompilerFlags.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/EnumOption.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/GlfwImport.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/InstallConfigurations.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/LibraryConfigurations.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/PackConfigurations.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-src/cmake/raylib-config-version.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\raylib-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\raylib-cpp\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/raylib-cpp/Findraylib.cmake">
+			<Option virtualFolder="CMake Files\raylib-cpp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,129 @@
+#!/usr/bin/python3
+
+import sys
+
+
+def selection_sort(tab):
+    nb_comp = 0
+
+    for i in range(len(tab)):
+        min_index = i
+        for j in range(i + 1, len(tab)):
+            nb_comp += 1
+            if tab[min_index] > tab[j]:
+                min_index = j
+        tab[min_index], tab[i] = tab[i], tab[min_index]
+    return nb_comp
+
+
+def insertion_sort(tab):
+    cmp = 0
+    for i in range(1, len(tab)):
+        j = i
+        while j > 0:
+            cmp += 1
+            if tab[j - 1] <= tab[j]:
+                tab[j], tab[j - 1] = tab[j - 1], tab[j]
+                j -= 1
+            else:
+                break
+    return cmp
+
+
+def bubble_sort(tab):
+    nb_comp = 0
+    for i in range(len(tab)):
+
+        for j in range(0, len(tab) - i - 1):
+            nb_comp += 1
+            if tab[j] > tab[j + 1]:
+                tab[j], tab[j + 1] = tab[j + 1], tab[j]
+    return nb_comp
+
+
+def quicksort(tab):
+    nb_comp = 0
+    if len(tab) <= 1:
+        return tab, nb_comp
+    pivot = tab[0]
+    left, right, equal = [], [], [pivot]
+    for i in range(1, len(tab)):
+        nb_comp += 1
+        if tab[i] >= pivot:
+            left.append(tab[i])
+        else:
+            right.append(tab[i])
+    rl = quicksort(left)
+    rr = quicksort(right)
+    to_sort = rl[0] + equal + rr[0]
+    nb_comp += rl[1] + rr[1]
+    return to_sort, nb_comp
+
+
+def merge(left, right):
+    res = []
+    nb_comp = 0
+    while left and right:
+        nb_comp += 1
+        if left[0] <= right[0]:
+            res.append(left[0])
+            left = left[1:]
+        else:
+            res.append(right[0])
+            right = right[1:]
+    res += left + right
+    return res, nb_comp
+
+
+def merge_sort(tab):
+    nb_comp = 0
+    if len(tab) <= 1:
+        return tab, nb_comp
+    left, right = [], []
+    for i in range(0, len(tab)):
+        if i < len(tab) // 2:
+            left.append(tab[i])
+        else:
+            right.append(tab[i])
+    left, tmp = merge_sort(left)
+    nb_comp += tmp
+    right, tmp = merge_sort(right)
+    nb_comp += tmp
+    ret, tmp = merge(left, right)
+    nb_comp += tmp
+    return ret, nb_comp
+
+
+usage = "USAGE\n\t./301dannon file\nDESCRIPTION\n\tfile\tfile that contains " \
+        "the numbers to be sorted, separated by spaces "
+if len(sys.argv) != 2:
+    print("This progroam must take 2 arguments. Please use './301dannon -h "
+          "for more explainations")
+    exit(84)
+if sys.argv[1] == "-h":
+    print(usage)
+    exit(0)
+try:
+    file = open(sys.argv[1], 'r')
+    line = file.readline()
+    stringTab = line.split()
+    numTab = []
+    for elem in stringTab:
+        numTab.append(float(elem))
+    if len(numTab) == 0:
+        exit(84)
+    print(len(numTab), "element" + ("s" if len(numTab) > 1 else ""))
+    tmp = selection_sort(numTab.copy())
+    print("Selection sort:", tmp, "comparisons")
+    tmp = insertion_sort(numTab.copy())
+    print("Insertion sort:", tmp, "comparisons")
+    tmp = bubble_sort(numTab.copy())
+    print("Bubble sort:", tmp, "comparisons")
+    tmp = quicksort(numTab.copy())[1]
+    print("Quicksort:", tmp, "comparisons")
+    tmp = merge_sort(numTab.copy())[1]
+    print("Merge sort:", tmp, "comparisons")
+except:
+    print("Oops en error occurred")
+    exit(84)
+exit(0)

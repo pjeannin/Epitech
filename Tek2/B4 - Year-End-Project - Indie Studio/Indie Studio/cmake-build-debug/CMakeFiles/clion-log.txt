@@ -1,0 +1,66 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie"
+-- The C compiler identification is AppleClang 12.0.5.12050022
+-- The CXX compiler identification is AppleClang 12.0.5.12050022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Populating raylib
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/_deps/raylib-subbuild
+Scanning dependencies of target raylib-populate
+[ 11%] Creating directories for 'raylib-populate'
+[ 22%] Performing download step (download, verify and extract) for 'raylib-populate'
+-- File already exists but no hash specified (use URL_HASH):
+  file='/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/_deps/raylib-subbuild/raylib-populate-prefix/src/3.7.0.tar.gz'
+Old file will be removed and new file downloaded from URL.
+-- Downloading...
+   dst='/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/_deps/raylib-subbuild/raylib-populate-prefix/src/3.7.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/raysan5/raylib/archive/refs/tags/3.7.0.tar.gz'
+-- [download 100% complete]
+-- Downloading... done
+-- extracting...
+     src='/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/_deps/raylib-subbuild/raylib-populate-prefix/src/3.7.0.tar.gz'
+     dst='/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/_deps/raylib-src'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 33%] No update step for 'raylib-populate'
+[ 44%] No patch step for 'raylib-populate'
+[ 55%] No configure step for 'raylib-populate'
+[ 66%] No build step for 'raylib-populate'
+[ 77%] No install step for 'raylib-populate'
+[ 88%] No test step for 'raylib-populate'
+[100%] Completed 'raylib-populate'
+[100%] Built target raylib-populate
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Using Cocoa for window creation
+-- Audio Backend: miniaudio
+CMake Warning (dev) at _deps/raylib-src/cmake/LibraryConfigurations.cmake:13 (MESSAGE):
+  OpenGL is deprecated starting with macOS 10.14 (Mojave)!
+Call Stack (most recent call first):
+  _deps/raylib-src/src/CMakeLists.txt:56 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Building raylib static library
+-- Generated build type: Debug
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_33
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie

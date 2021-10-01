@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule"
+		},
+		{
+			"file" : "/Users/pierre/Documents/Epitech/Tek2/B4 - Year-End-Project - Indie Studio/B-YEP-400-STG-4-1-indiestudio-antony.fantapie/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}
