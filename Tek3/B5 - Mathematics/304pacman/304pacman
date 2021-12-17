@@ -1,0 +1,110 @@
+#!/usr/bin/python3
+
+import sys
+
+usage = "    file    file describing the board, using the following characters:\n                '0' for an empty square,\n                '1' for a wall,\n                'F' for the ghost position,\n                'P' for the Pacman's positions.\n    c1      character to display for a wall\n    c2      character to display for an empty space. "
+my_list = []
+error_message = "Oops something went wrong"
+
+def get_map(lines, c1, Cc2):
+    f_pos = None
+    p_pos = None
+    l_pos = 0
+    global my_list
+    global error_message
+    for line in lines:
+        line = line.strip('\n').strip('\r').strip('\n')
+        tmpCell = []
+        for index in range(len(line)):
+            if line[index] == 'P':
+                if p_pos is None:
+                    p_pos = (index, l_pos)
+                else:
+                    error_message = "You can have more than one Player in the map"
+                    b = 4 / 0
+            elif line[index] == 'F':
+                if f_pos is None:
+                    f_pos = (index, l_pos, 0)
+                else:
+                    error_message = "You can have more than one Ghost in the map"
+                    b = 4 / 0
+            tmp = {
+                '1': -1,
+                '0': -2,
+                'F': -3,
+                'P': -4
+            }.get(line[index], -5)
+            if tmp == -5:
+                error_message = "Invalid char in the map"
+                b = 4 / 0
+            tmpCell.append(tmp)
+        l_pos += 1
+        my_list.append(tmpCell)
+    if p_pos is None or f_pos is None:
+        error_message = "You need to place one Player and one Ghost in the map"
+        b = 4 / 0
+    return f_pos, p_pos
+
+
+def check_on_map(tmp, x, y, z):
+    global my_list
+    if x < 0 or x >= len(my_list[y]) or y < 0 or y >= len(my_list):
+        return False
+    if my_list[y][x] == -4:
+        return True
+    if my_list[y][x] != -2:
+        return False
+    my_list[y][x] = z + 1
+    tmp.append((x, y, z + 1))
+
+
+def find_path(p_pos, f_pos, c1, c2):
+    global tab
+    global error_message
+    previous = [f_pos]
+    path = False
+    while len(previous) > 0:
+        tmp = []
+        for p_pos in previous:
+            if check_on_map(tmp, p_pos[0], p_pos[1] - 1, p_pos[2]) \
+                    or check_on_map(tmp, p_pos[0] + 1, p_pos[1], p_pos[2]) \
+                    or check_on_map(tmp, p_pos[0], p_pos[1] + 1, p_pos[2]) \
+                    or check_on_map(tmp, p_pos[0] - 1, p_pos[1], p_pos[2]):
+                tmp = []
+                path = True
+                break
+        previous = tmp
+    if not path:
+        error_message = "Can't find a path"
+        b = 4 / 0
+    for cell in my_list:
+        line = ""
+        for char in cell:
+            line += {
+                -1: c1,
+                -2: c2,
+                -3: 'F',
+                -4: 'P'
+            }.get(char, str(char % 10))
+        print(line)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1] == "-h":
+        print(usage)
+        exit(0)
+    if len(sys.argv) != 4:
+        print("Invalid args")
+        exit(84)
+    elif (len(sys.argv[2]) != 1 or len(sys.argv[3]) != 1) or sys.argv[2] == sys.argv[3]:
+        print("Invalid arg")
+        exit(84)
+    try:
+        lines = open(sys.argv[1]).readlines()
+        c1 = sys.argv[2]
+        c2 = sys.argv[3]
+        f_pos, p_pos = get_map(lines, c1, c2)
+        find_path(p_pos, f_pos, c1, c2)
+    except:
+        print(error_message)
+        exit(84)

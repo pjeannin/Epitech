@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Babel"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\.conan\;CMake Files\..\..\..\..\..\.conan\data\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\264f180b28ff91ffa6d05e858eb8e55cc6c1a073\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\264f180b28ff91ffa6d05e858eb8e55cc6c1a073\lib\;CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\264f180b28ff91ffa6d05e858eb8e55cc6c1a073\lib\cmake\;CMake Files\..\..\..\..\..\.conan\data\openssl\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\647afeb69d3b0a2d3d316e80b24d38c714cc6900\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\647afeb69d3b0a2d3d316e80b24d38c714cc6900\lib\;CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\647afeb69d3b0a2d3d316e80b24d38c714cc6900\lib\cmake\;CMake Files\..\..\..\..\..\.conan\data\bzip2\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\75fe66fbfe61230e9fcbb361f13b6b3baa483e0a\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\75fe66fbfe61230e9fcbb361f13b6b3baa483e0a\lib\;CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\75fe66fbfe61230e9fcbb361f13b6b3baa483e0a\lib\cmake\;CMake Files\..\..\..\..\..\.conan\data\freetype\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\f4924bd3b94e155cbf790d74ba3a3c29ccc81e89\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\f4924bd3b94e155cbf790d74ba3a3c29ccc81e89\lib\;CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\f4924bd3b94e155cbf790d74ba3a3c29ccc81e89\lib\cmake\;CMake Files\..\..\..\..\..\.conan\data\qt\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Widgets\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server">
+				<Option output="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin/babel_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_server_autogen/include"/>
+					<Add directory="/Users/pierre/.conan/data/portaudio/19.7.0/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/opus"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtNetwork"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtSql"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtTest"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtPrintSupport"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtWidgets"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGL"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGLExtensions"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtGui"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtConcurrent"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtXml"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtCore"/>
+					<Add directory="/Users/pierre/.conan/data/asio/1.19.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierre/.conan/data/libffi/3.4.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/pcre2/10.37/_/_/package/2d8245d819a6b7543095d62df5d99244060071ba/include"/>
+					<Add directory="/Users/pierre/.conan/data/double-conversion/3.1.5/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include/freetype2"/>
+					<Add directory="/Users/pierre/.conan/data/libjpeg/9d/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/sqlite3/3.36.0/_/_/package/264f180b28ff91ffa6d05e858eb8e55cc6c1a073/include"/>
+					<Add directory="/Users/pierre/.conan/data/libmysqlclient/8.0.25/_/_/package/97c732aa3dd032b38cd549bd7305e62dec344d85/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpq/13.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/odbc/2.3.9/_/_/package/5f4c4ed8ddf27bb70b22f93ac66b6827fc5411d1/include"/>
+					<Add directory="/Users/pierre/.conan/data/openssl/1.1.1k/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/bzip2/1.0.8/_/_/package/75fe66fbfe61230e9fcbb361f13b6b3baa483e0a/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpng/1.6.37/_/_/package/ac5d0a30f12dfc11387a002e4010b156f3b7eda5/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/brotli"/>
+					<Add directory="/Users/pierre/.conan/data/zstd/1.5.0/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/lz4/1.9.3/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/libiconv/1.16/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/zlib/1.2.11/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin/babel_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_server_autogen/include"/>
+					<Add directory="/Users/pierre/.conan/data/portaudio/19.7.0/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/opus"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtNetwork"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtSql"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtTest"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtPrintSupport"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtWidgets"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGL"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGLExtensions"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtGui"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtConcurrent"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtXml"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtCore"/>
+					<Add directory="/Users/pierre/.conan/data/asio/1.19.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierre/.conan/data/libffi/3.4.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/pcre2/10.37/_/_/package/2d8245d819a6b7543095d62df5d99244060071ba/include"/>
+					<Add directory="/Users/pierre/.conan/data/double-conversion/3.1.5/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include/freetype2"/>
+					<Add directory="/Users/pierre/.conan/data/libjpeg/9d/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/sqlite3/3.36.0/_/_/package/264f180b28ff91ffa6d05e858eb8e55cc6c1a073/include"/>
+					<Add directory="/Users/pierre/.conan/data/libmysqlclient/8.0.25/_/_/package/97c732aa3dd032b38cd549bd7305e62dec344d85/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpq/13.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/odbc/2.3.9/_/_/package/5f4c4ed8ddf27bb70b22f93ac66b6827fc5411d1/include"/>
+					<Add directory="/Users/pierre/.conan/data/openssl/1.1.1k/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/bzip2/1.0.8/_/_/package/75fe66fbfe61230e9fcbb361f13b6b3baa483e0a/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpng/1.6.37/_/_/package/ac5d0a30f12dfc11387a002e4010b156f3b7eda5/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/brotli"/>
+					<Add directory="/Users/pierre/.conan/data/zstd/1.5.0/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/lz4/1.9.3/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/libiconv/1.16/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/zlib/1.2.11/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client">
+				<Option output="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin/babel_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_client_autogen/include"/>
+					<Add directory="/Users/pierre/.conan/data/portaudio/19.7.0/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/opus"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtNetwork"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtSql"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtTest"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtPrintSupport"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtWidgets"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGL"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGLExtensions"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtGui"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtConcurrent"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtXml"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtCore"/>
+					<Add directory="/Users/pierre/.conan/data/asio/1.19.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierre/.conan/data/libffi/3.4.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/pcre2/10.37/_/_/package/2d8245d819a6b7543095d62df5d99244060071ba/include"/>
+					<Add directory="/Users/pierre/.conan/data/double-conversion/3.1.5/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include/freetype2"/>
+					<Add directory="/Users/pierre/.conan/data/libjpeg/9d/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/sqlite3/3.36.0/_/_/package/264f180b28ff91ffa6d05e858eb8e55cc6c1a073/include"/>
+					<Add directory="/Users/pierre/.conan/data/libmysqlclient/8.0.25/_/_/package/97c732aa3dd032b38cd549bd7305e62dec344d85/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpq/13.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/odbc/2.3.9/_/_/package/5f4c4ed8ddf27bb70b22f93ac66b6827fc5411d1/include"/>
+					<Add directory="/Users/pierre/.conan/data/openssl/1.1.1k/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/bzip2/1.0.8/_/_/package/75fe66fbfe61230e9fcbb361f13b6b3baa483e0a/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpng/1.6.37/_/_/package/ac5d0a30f12dfc11387a002e4010b156f3b7eda5/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/brotli"/>
+					<Add directory="/Users/pierre/.conan/data/zstd/1.5.0/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/lz4/1.9.3/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/libiconv/1.16/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/zlib/1.2.11/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client/fast">
+				<Option output="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin/babel_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_client_autogen/include"/>
+					<Add directory="/Users/pierre/.conan/data/portaudio/19.7.0/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/opus/1.3.1/bincrafters/stable/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/opus"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtNetwork"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtSql"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtTest"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtPrintSupport"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtWidgets"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGL"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtOpenGLExtensions"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtGui"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtConcurrent"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtXml"/>
+					<Add directory="/Users/pierre/.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/include/QtCore"/>
+					<Add directory="/Users/pierre/.conan/data/asio/1.19.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierre/.conan/data/libffi/3.4.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/pcre2/10.37/_/_/package/2d8245d819a6b7543095d62df5d99244060071ba/include"/>
+					<Add directory="/Users/pierre/.conan/data/double-conversion/3.1.5/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include"/>
+					<Add directory="/Users/pierre/.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/include/freetype2"/>
+					<Add directory="/Users/pierre/.conan/data/libjpeg/9d/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/sqlite3/3.36.0/_/_/package/264f180b28ff91ffa6d05e858eb8e55cc6c1a073/include"/>
+					<Add directory="/Users/pierre/.conan/data/libmysqlclient/8.0.25/_/_/package/97c732aa3dd032b38cd549bd7305e62dec344d85/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpq/13.2/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/odbc/2.3.9/_/_/package/5f4c4ed8ddf27bb70b22f93ac66b6827fc5411d1/include"/>
+					<Add directory="/Users/pierre/.conan/data/openssl/1.1.1k/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/bzip2/1.0.8/_/_/package/75fe66fbfe61230e9fcbb361f13b6b3baa483e0a/include"/>
+					<Add directory="/Users/pierre/.conan/data/libpng/1.6.37/_/_/package/ac5d0a30f12dfc11387a002e4010b156f3b7eda5/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/brotli/1.0.9/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include/brotli"/>
+					<Add directory="/Users/pierre/.conan/data/zstd/1.5.0/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/lz4/1.9.3/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/libiconv/1.16/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/.conan/data/zlib/1.2.11/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_include"/>
+					<Add directory="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server_autogen">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_server_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client_autogen">
+				<Option working_dir="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 babel_client_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pierre/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/.DS_Store">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Audio/Opus.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Audio/Opus.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Audio/PortAudio.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Audio/PortAudio.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Client.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Client.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Encrypt/Encrypt.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Encrypt/Encrypt.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Exception.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/ITcp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/IUdp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/LoopUdp.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/LoopUdp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/Tcp.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/Tcp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/Udp.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Network/Udp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Thread/Thread.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Thread/Thread.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/IMainWindow.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/HelveticaNeue.ttf">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/contact-images/Alexandre Kimmel.jpg">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/contact-images/Frédéric Forster.jpg">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/contact-images/undefined.jpg">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/ajouter_contact.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/appel.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/casque.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/casque_coupe.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/connection.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/croix.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/deconnecter.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/enregistrer.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/envoyer.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/loupe.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/messages.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/micro.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/micro_coupe.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/parametres.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/assets/icons/plus.png">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/mainwindow.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/mainwindow.h">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/mainwindow.ui">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/UI/ui_mainwindow.h">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Utils/Utils.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/Utils/Utils.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/client/main.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_client_autogen/mocs_compilation.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/babel_server_autogen/mocs_compilation.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/.DS_Store">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/main.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpClient/ITcpClient.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpClient/TcpClient.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpClient/TcpClient.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpServer/ITcpServer.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpServer/TcpServer.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/network/tcpServer/TcpServer.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/server/Server.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/server/Server.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/server/database/Database.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/server/database/Database.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/user/IUser.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/user/User.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/server/user/User.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files/.DS_Store">
+			<Option target="babel_server"/>
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files/Utils.cpp">
+			<Option target="babel_server"/>
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files/commandManager/CommandManager.cpp">
+			<Option target="babel_server"/>
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/shared_files/commandManager/CommandManager.hpp">
+			<Option target="babel_server"/>
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindBZip2.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindBrotli.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindFreetype.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindIconv.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindJPEG.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindMySQL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindODBC.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindOpenSSL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindPNG.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindPostgreSQL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindQt5.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindSQLite3.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/FindZLIB.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/Finddouble-conversion.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/Findlz4.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/Findopengl_system.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/Findpcre2.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/Findzstd.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/conan_paths.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/conanbuildinfo.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/sqlite3/3.36.0/_/_/package/264f180b28ff91ffa6d05e858eb8e55cc6c1a073/lib/cmake/conan-official-sqlite3-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\264f180b28ff91ffa6d05e858eb8e55cc6c1a073\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/openssl/1.1.1k/_/_/package/647afeb69d3b0a2d3d316e80b24d38c714cc6900/lib/cmake/conan-official-openssl-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\647afeb69d3b0a2d3d316e80b24d38c714cc6900\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/bzip2/1.0.8/_/_/package/75fe66fbfe61230e9fcbb361f13b6b3baa483e0a/lib/cmake/conan-official-bzip2-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\75fe66fbfe61230e9fcbb361f13b6b3baa483e0a\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/freetype/2.10.4/_/_/package/f4924bd3b94e155cbf790d74ba3a3c29ccc81e89/lib/cmake/conan-official-freetype-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\f4924bd3b94e155cbf790d74ba3a3c29ccc81e89\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/lib/cmake/Qt5Core/conan_qt_executables_variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/lib/cmake/Qt5Core/conan_qt_qt5_coreprivate.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/lib/cmake/Qt5Gui/conan_qt_qt5_guiprivate.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/pierre/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/../../../../../.conan/data/qt/5.15.2/_/_/package/80e727999279a6024a07f59e57aca79272ae5ec0/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\80e727999279a6024a07f59e57aca79272ae5ec0\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

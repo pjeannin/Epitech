@@ -1,0 +1,129 @@
+#!/usr/bin/python3
+
+
+import sys
+import copy
+
+
+def mul_matrix(mat1, mat2):
+    res_list = []
+
+    for index in range(len(mat1)):
+        tmp = []
+        for jj in range(len(mat2[0])):
+            tvar = 0
+            for kk in range(len(mat2)):
+                tvar += mat1[index][kk] * mat2[kk][jj]
+            tmp.append(tvar)
+        res_list.append(tmp)
+    return res_list
+
+
+def get_file_infos(filename):
+    myFile = open(filename, 'r')
+    lines = myFile.readlines()
+    myFile.close()
+    nameList = []
+    for line in lines:
+        if '\n' in line:
+            line = line[:-1]
+        tmp = line.split(" is friends with ")
+        if tmp[0] not in nameList:
+            nameList.append(tmp[0])
+        if tmp[1] not in nameList:
+            nameList.append(tmp[1])
+    nameList.sort()
+    matrix = []
+    for x in range(len(nameList)):
+        innermatrix = []
+        for y in range(len(nameList)):
+            innermatrix.append(0)
+        matrix.append(innermatrix)
+    for line in lines:
+        if '\n' in line:
+            line = line[:-1]
+        tmp = line.split(" is friends with ")
+        matrix[nameList.index(tmp[0])][nameList.index(tmp[1])] = 1
+        matrix[nameList.index(tmp[1])][nameList.index(tmp[0])] = 1
+    return matrix, nameList
+
+
+def find_people(names_list, p_name):
+    for i in range(len(names_list)):
+        if names_list[i] == p_name:
+            return i
+
+
+usage = "USAGE\n    ./302separation file [n | p1 p2]\nDESCRIPTION\n    file   " \
+        " file that contains the list of Facebook connections\n    n       " \
+        "maximum length of the paths\n    pi      name of someone in the file "
+
+#get_file_infos("exemple")
+#exit(0)
+
+if len(sys.argv) == 2 and sys.argv[1] == "-h":
+    print(usage)
+    exit(0)
+elif len(sys.argv) == 3:
+    try:
+        base_matrix, names = get_file_infos(sys.argv[1])
+        resultMatrix = copy.deepcopy(base_matrix)
+        tmpMatrix = copy.deepcopy(base_matrix)
+        for name in names:
+            print(name)
+        print("")
+        for i in range(int(sys.argv[2])):
+            for j in range(0, len(base_matrix)):
+                for k in range(0, len(base_matrix)):
+                    if resultMatrix[j][k] == 0 and tmpMatrix[j][k] != 0 \
+                            and j != k:
+                        resultMatrix[j][k] = i + 1
+            tmpMatrix = mul_matrix(tmpMatrix, base_matrix)
+        for elem in base_matrix:
+            for i in range(len(elem)):
+                print(elem[i], end='')
+                if i != len(elem) - 1:
+                    print(" ", end='')
+            print("")
+        print("")
+        for elem in resultMatrix:
+            for i in range(len(elem)):
+                print(elem[i], end='')
+                if i != len(elem) - 1:
+                    print(" ", end='')
+            print("")
+    except:
+        print("Oops something went wrong !")
+        exit(84)
+    exit(0)
+elif len(sys.argv) == 4:
+    try:
+        matrix, names = get_file_infos(sys.argv[1])
+        tmpMatrix = matrix.copy()
+        find = False
+        if not sys.argv[2] in names or not sys.argv[3] in names:
+            print("Degree of separation between ", sys.argv[2], " and ",
+                  sys.argv[3], ": -1", sep='')
+        elif sys.argv[2] == sys.argv[3]:
+            print("Degree of separation between ", sys.argv[2], " and ",
+                  sys.argv[3], ": 0", sep='')
+        else:
+            index1 = find_people(names, sys.argv[2])
+            index2 = find_people(names, sys.argv[3])
+            for i in range(len(names)):
+                if tmpMatrix[index2][index1] != 0:
+                    print("Degree of separation between ", sys.argv[2], " and ",
+                          sys.argv[3], ": ", i + 1, sep='')
+                    find = True
+                    break
+                tmpMatrix = mul_matrix(tmpMatrix, matrix)
+            if not find:
+                print("Degree of separation between ", sys.argv[2], " and ",
+                      sys.argv[3], ": -1", sep='')
+    except:
+        print("Oops something went wrong !")
+        exit(84)
+    exit(0)
+else:
+    print("invalid args")
+    exit(84)

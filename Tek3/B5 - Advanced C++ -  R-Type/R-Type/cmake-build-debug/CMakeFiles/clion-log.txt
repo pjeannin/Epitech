@@ -1,0 +1,8 @@
+"/Users/pierrejeannin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type"
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: /Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug

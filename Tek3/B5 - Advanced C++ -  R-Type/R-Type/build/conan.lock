@@ -1,0 +1,160 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "boost:addr2line_location=/usr/bin/addr2line\nboost:asio_no_deprecated=False\nboost:buildid=None\nboost:bzip2=True\nboost:debug_level=0\nboost:diagnostic_definitions=False\nboost:error_code_header_only=False\nboost:extra_b2_flags=None\nboost:fPIC=True\nboost:filesystem_no_deprecated=False\nboost:header_only=False\nboost:i18n_backend=deprecated\nboost:i18n_backend_iconv=libiconv\nboost:i18n_backend_icu=False\nboost:layout=system\nboost:lzma=False\nboost:magic_autolink=False\nboost:multithreading=True\nboost:namespace=boost\nboost:namespace_alias=False\nboost:pch=True\nboost:python_executable=None\nboost:python_version=None\nboost:segmented_stacks=False\nboost:shared=False\nboost:system_no_deprecated=False\nboost:visibility=hidden\nboost:with_stacktrace_backtrace=True\nboost:without_atomic=False\nboost:without_chrono=False\nboost:without_container=False\nboost:without_context=False\nboost:without_contract=False\nboost:without_coroutine=False\nboost:without_date_time=False\nboost:without_exception=False\nboost:without_fiber=True\nboost:without_filesystem=False\nboost:without_graph=True\nboost:without_graph_parallel=True\nboost:without_iostreams=False\nboost:without_json=True\nboost:without_locale=False\nboost:without_log=False\nboost:without_math=True\nboost:without_mpi=True\nboost:without_nowide=True\nboost:without_program_options=False\nboost:without_python=True\nboost:without_random=False\nboost:without_regex=False\nboost:without_serialization=False\nboost:without_stacktrace=False\nboost:without_system=False\nboost:without_test=False\nboost:without_thread=False\nboost:without_timer=False\nboost:without_type_erasure=False\nboost:without_wave=False\nboost:zlib=True\nboost:zstd=False\nbrotli:fPIC=True\nbrotli:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_brotli=True\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibbacktrace:fPIC=True\nlibbacktrace:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:neon=True\nlibpng:shared=False\nogg:fPIC=True\nogg:shared=False\nopenal:fPIC=True\nopenal:shared=False\nsfml:audio=True\nsfml:graphics=True\nsfml:network=True\nsfml:shared=True\nsfml:window=True\nstb:with_deprecated=True\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "14"
+    ],
+    "path": "../conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "asio/1.20.0#7d0550f93453b79bf754dc61ad552949",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "79824e1cd35dcba610362eb32bd22359",
+    "context": "host"
+   },
+   "2": {
+    "ref": "sfml/2.5.1#07c41f8799438fac25fd6a29612484e5",
+    "options": "audio=True\ngraphics=True\nnetwork=True\nshared=True\nwindow=True\nbrotli:fPIC=True\nbrotli:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nflac:fPIC=True\nflac:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_brotli=True\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:neon=True\nlibpng:shared=False\nogg:fPIC=True\nogg:shared=False\nopenal:fPIC=True\nopenal:shared=False\nstb:with_deprecated=True\nvorbis:fPIC=True\nvorbis:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "bfa58ab78ba36e7a5080e0eed477f84e99709490",
+    "prev": "270dfaf280cbe600f71282f28c24f531",
+    "requires": [
+     "3",
+     "4",
+     "9",
+     "10",
+     "12",
+     "13"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "opengl/system#3582b5d3184289461f73339622c71d31",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "e0c823b9bed28348dd7f3bcedf045c58",
+    "context": "host"
+   },
+   "4": {
+    "ref": "freetype/2.11.0#ed505650cb0c3b72f93fca211e89aae1",
+    "options": "fPIC=True\nshared=False\nwith_brotli=True\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbrotli:fPIC=True\nbrotli:shared=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=\nlibpng:fPIC=True\nlibpng:neon=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04",
+    "prev": "04507ef7d1f7977a99e07c0866b2efb1",
+    "requires": [
+     "5",
+     "6",
+     "7",
+     "8"
+    ],
+    "context": "host"
+   },
+   "5": {
+    "ref": "libpng/1.6.37#08b5607052686860a2e40d5db6166d9f",
+    "options": "api_prefix=\nfPIC=True\nneon=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "d3500a8154832cbdef2b3c64b5ea936fb3db8fae",
+    "prev": "8fa0c27bc007260e9cb86373d573dfd8",
+    "requires": [
+     "6"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "zlib/1.2.11#b3eaf63da20a8606f3d84602c2cfa854",
+    "options": "fPIC=True\nminizip=deprecated\nshared=False",
+    "package_id": "095512ed878f14a09dd732e9f6868729dd437529",
+    "prev": "62e07ffc1b2879eca1374421992a6651",
+    "context": "host"
+   },
+   "7": {
+    "ref": "bzip2/1.0.8#9c8b632000a52af5af3f045d3a6db12f",
+    "options": "build_executable=True\nfPIC=True\nshared=False",
+    "package_id": "2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589",
+    "prev": "71a1bbc1c135986d71c89a80f9dd8ade",
+    "context": "host"
+   },
+   "8": {
+    "ref": "brotli/1.0.9#802b2457f7a7a509ed80e7e45adf960e",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "095512ed878f14a09dd732e9f6868729dd437529",
+    "prev": "40814ddc8d52c032e102779dc021b6ea",
+    "context": "host"
+   },
+   "9": {
+    "ref": "stb/cci.20210713#b3854a7d188228a45413baa61c54d4a8",
+    "options": "with_deprecated=True",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "1c3855b2bee5b1bc4cf3bfeba47856ab",
+    "context": "host"
+   },
+   "10": {
+    "ref": "flac/1.3.3#b6cc4e49797347efd569a9eca3c58d4e",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "package_id": "1f84e7b7ea1a90cfc87d81fcc92e924da3dce9b5",
+    "prev": "9740d40dfdb61332f82e434d8b02d473",
+    "requires": [
+     "11"
+    ],
+    "context": "host"
+   },
+   "11": {
+    "ref": "ogg/1.3.4#b69afb47bef45e7b2b6360aa669dff18",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "095512ed878f14a09dd732e9f6868729dd437529",
+    "prev": "ebeb02bf63d17d644aab037aef5fee19",
+    "context": "host"
+   },
+   "12": {
+    "ref": "openal/1.21.1#072b4665896bd2fc641a91d500b18f1d",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "f1a36a2aea2da1148eb4bddd758d8db183c6db83",
+    "prev": "f9619544a859f66ea8f0ab33790ee580",
+    "context": "host"
+   },
+   "13": {
+    "ref": "vorbis/1.3.7#04b23c3827f7a2779c417cb33f013264",
+    "options": "fPIC=True\nshared=False\nogg:fPIC=True\nogg:shared=False",
+    "package_id": "0e3cc1b75800c910b363488983a82a164cac70fd",
+    "prev": "33beab20248fbb00583b2893ca4457ab",
+    "requires": [
+     "11"
+    ],
+    "context": "host"
+   },
+   "14": {
+    "ref": "boost/1.77.0#6d36cb7b89e2a1d858673edfcad6b356",
+    "options": "addr2line_location=/usr/bin/addr2line\nasio_no_deprecated=False\nbuildid=None\nbzip2=True\ndebug_level=0\ndiagnostic_definitions=False\nerror_code_header_only=False\nextra_b2_flags=None\nfPIC=True\nfilesystem_no_deprecated=False\nheader_only=False\ni18n_backend=deprecated\ni18n_backend_iconv=libiconv\ni18n_backend_icu=False\nlayout=system\nlzma=False\nmagic_autolink=False\nmultithreading=True\nnamespace=boost\nnamespace_alias=False\npch=True\npython_executable=None\npython_version=None\nsegmented_stacks=False\nshared=False\nsystem_no_deprecated=False\nvisibility=hidden\nwith_stacktrace_backtrace=True\nwithout_atomic=False\nwithout_chrono=False\nwithout_container=False\nwithout_context=False\nwithout_contract=False\nwithout_coroutine=False\nwithout_date_time=False\nwithout_exception=False\nwithout_fiber=True\nwithout_filesystem=False\nwithout_graph=True\nwithout_graph_parallel=True\nwithout_iostreams=False\nwithout_json=True\nwithout_locale=False\nwithout_log=False\nwithout_math=True\nwithout_mpi=True\nwithout_nowide=True\nwithout_program_options=False\nwithout_python=True\nwithout_random=False\nwithout_regex=False\nwithout_serialization=False\nwithout_stacktrace=False\nwithout_system=False\nwithout_test=False\nwithout_thread=False\nwithout_timer=False\nwithout_type_erasure=False\nwithout_wave=False\nzlib=True\nzstd=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibbacktrace:fPIC=True\nlibbacktrace:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nzlib:fPIC=True\nzlib:minizip=deprecated\nzlib:shared=False",
+    "package_id": "ff8c86eb4bb02a59af829f856ba290ce29bd819f",
+    "prev": "d24103dde9e9791eab7060a4f4a13d43",
+    "requires": [
+     "6",
+     "7",
+     "15",
+     "16"
+    ],
+    "context": "host"
+   },
+   "15": {
+    "ref": "libbacktrace/cci.20210118#c3f13ca8bbb0340019a28a16b59a59a6",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "095512ed878f14a09dd732e9f6868729dd437529",
+    "prev": "1ad51f773c674776f23fcf89b5422318",
+    "context": "host"
+   },
+   "16": {
+    "ref": "libiconv/1.16#b902d00f68f77c3c4f8ac251204fe2ae",
+    "options": "fPIC=True\nshared=False",
+    "package_id": "095512ed878f14a09dd732e9f6868729dd437529",
+    "prev": "ef65332e54fa36a183cc7b23d2ad6a97",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": true
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=armv8\narch_build=armv8\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=13.0\ncppstd=gnu20\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\n"
+}

@@ -1,0 +1,23 @@
+[requires]
+asio/1.20.0
+sfml/2.5.1
+boost/1.77.0
+
+[options]
+sfml:graphics=True
+sfml:window=True
+sfml:audio=True
+sfml:network=True
+sfml:shared=True
+
+[generators]
+cmake
+cmake_find_package
+cmake_paths
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my "lib" folder
+lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
+plugins, * -> ./bin/plugins
+framework, * -> ./lib

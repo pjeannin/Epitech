@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RTYPE"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RTYPE_server">
+				<Option output="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin/RTYPE_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/asio/1.20.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/boost/1.77.0/_/_/package/ff8c86eb4bb02a59af829f856ba290ce29bd819f/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include/freetype2"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/stb/cci.20210713/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/flac/1.3.3/_/_/package/1f84e7b7ea1a90cfc87d81fcc92e924da3dce9b5/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include/AL"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/vorbis/1.3.7/_/_/package/0e3cc1b75800c910b363488983a82a164cac70fd/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libiconv/1.16/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libpng/1.6.37/_/_/package/d3500a8154832cbdef2b3c64b5ea936fb3db8fae/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include/brotli"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/ogg/1.3.4/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/zlib/1.2.11/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/SHARED_INCLUDE_FOLDER"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 RTYPE_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RTYPE_server/fast">
+				<Option output="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin/RTYPE_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/asio/1.20.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/boost/1.77.0/_/_/package/ff8c86eb4bb02a59af829f856ba290ce29bd819f/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include/freetype2"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/stb/cci.20210713/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/flac/1.3.3/_/_/package/1f84e7b7ea1a90cfc87d81fcc92e924da3dce9b5/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include/AL"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/vorbis/1.3.7/_/_/package/0e3cc1b75800c910b363488983a82a164cac70fd/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libiconv/1.16/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libpng/1.6.37/_/_/package/d3500a8154832cbdef2b3c64b5ea936fb3db8fae/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include/brotli"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/ogg/1.3.4/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/zlib/1.2.11/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/SHARED_INCLUDE_FOLDER"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 RTYPE_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RTYPE_client">
+				<Option output="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin/RTYPE_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/asio/1.20.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/boost/1.77.0/_/_/package/ff8c86eb4bb02a59af829f856ba290ce29bd819f/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include/freetype2"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/stb/cci.20210713/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/flac/1.3.3/_/_/package/1f84e7b7ea1a90cfc87d81fcc92e924da3dce9b5/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include/AL"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/vorbis/1.3.7/_/_/package/0e3cc1b75800c910b363488983a82a164cac70fd/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libiconv/1.16/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libpng/1.6.37/_/_/package/d3500a8154832cbdef2b3c64b5ea936fb3db8fae/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include/brotli"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/ogg/1.3.4/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/zlib/1.2.11/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/SHARED_INCLUDE_FOLDER"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 RTYPE_client"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RTYPE_client/fast">
+				<Option output="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin/RTYPE_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/cmake-build-debug"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/asio/1.20.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/boost/1.77.0/_/_/package/ff8c86eb4bb02a59af829f856ba290ce29bd819f/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/freetype/2.11.0/_/_/package/3ca56ab0f053cd9252149b736d1f4aa7e7bcfd04/include/freetype2"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/stb/cci.20210713/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/flac/1.3.3/_/_/package/1f84e7b7ea1a90cfc87d81fcc92e924da3dce9b5/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/openal/1.21.1/_/_/package/f1a36a2aea2da1148eb4bddd758d8db183c6db83/include/AL"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/vorbis/1.3.7/_/_/package/0e3cc1b75800c910b363488983a82a164cac70fd/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libiconv/1.16/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/libpng/1.6.37/_/_/package/d3500a8154832cbdef2b3c64b5ea936fb3db8fae/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/brotli/1.0.9/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include/brotli"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/ogg/1.3.4/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/.conan/data/zlib/1.2.11/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/include"/>
+					<Add directory="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/SHARED_INCLUDE_FOLDER"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 RTYPE_client/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/pierrejeannin/Documents/Epitech/Tek3/B5\ -\ Advanced\ C++\ -\ \ R-Type/R-Type/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlDrawable.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlDrawable.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlMusic.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlMusic.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlSound.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlSound.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlText.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/ECS/SfmlText.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameParallax.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameParallax.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo1.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo1.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo2.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo2.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus1.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus1.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus2.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus2.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus3.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus3.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy1.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy1.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy2.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy2.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy3.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy3.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy4.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy4.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus1.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus1.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus2.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus2.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus3.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus3.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Player.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Player.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnCreateRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnCreateRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnJoinRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnJoinRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnNewGame.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnNewGame.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnSettings.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnSettings.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnTutorial.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnTutorial.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifTitle.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifTitle.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifWeapon.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifWeapon.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/NavInfo.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/NavInfo.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionCreateRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionJoinRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionMenuStart.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionMenuStart.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionNewGame.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionNewGame.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionSettings.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionSettings.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextMusicVolume.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextMusicVolume.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextSoundVolume.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextSoundVolume.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Music.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Music.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Picture.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Picture.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/SoundClicked.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/SoundClicked.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Text.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Text.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/ITcp.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/IUdp.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlTcpClient.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlTcpClient.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlUdpClient.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlUdpClient.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/CreateRoomScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/CreateRoomScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/GameScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/GameScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/IScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/JoinRoomScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/JoinRoomScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/MainMenuScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/MainMenuScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/NewGameScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/NewGameScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/SettingsScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/SettingsScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/TutorialScene.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/TutorialScene.hpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/main.cpp">
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AAmmo.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AAmmo.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/ABonus.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/ABonus.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AEnemy.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AEnemy.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AMalus.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/AMalus.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Ammo1.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Ammo1.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Ammo2.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Ammo2.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus1.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus1.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus2.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus2.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus3.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Bonus3.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy1.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy1.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy2.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy2.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy3.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy3.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy4.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Enemy4.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus1.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus1.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus2.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus2.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus3.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Malus3.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Player.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/GameObjects/Player.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/IServer.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Scene/AGameManager.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Scene/AGameManager.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Scene/Game.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Scene/Game.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Scene/IGameManager.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Server.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/Server.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/main.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/Asio.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/clientSession/AsioClientSession.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/clientSession/AsioClientSession.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/clientSession/IClientSession.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/network.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/tcp/AsioTcpServer.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/tcp/AsioTcpServer.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/tcp/ITcpServer.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/udp/AsioUdpServer.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/udp/AsioUdpServer.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/network/udp/IUdpServer.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/room/IRoom.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/room/Room.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/room/Room.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/swarm/Swarm.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/swarm/Swarm.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/user/IUser.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/user/User.cpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/server/user/User.hpp">
+			<Option target="RTYPE_server"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Clock/clock.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Clock/clock.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/ADrawables.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/ADrawables.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/AMusic.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/AMusic.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/ASound.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/ASound.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/AText.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/AText.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Acceleration.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Acceleration.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Dammage.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Dammage.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/EffectHandler.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/EffectHandler.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/GameObject.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Health.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Health.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/HitBox.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/HitBox.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IComponent.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IEffect.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IGameObject.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IManager.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IWeapon.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Id.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Id.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Position.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Position.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Score.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Score.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Stat.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Stat.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/State.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/State.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/WeaponHolder.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/WeaponHolder.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SfmlEvent.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SfmlEvent.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Network/Requests.cpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Network/Requests.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/SharedLIb.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/include/LibrairyTypes.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/include/include.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/utils/print.hpp">
+			<Option target="RTYPE_server"/>
+			<Option target="RTYPE_client"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/conan_paths.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/conanbuildinfo.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

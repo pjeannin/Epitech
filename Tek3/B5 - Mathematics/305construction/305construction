@@ -1,0 +1,115 @@
+#!/usr/bin/python3
+
+import sys
+import os
+import csv
+
+usage = "USAGE\n    ./305construction file\n\nDESCRIPTION\n   file   file describing the tasks"
+global_table = []
+global_dictionary = {}
+
+
+def to_float(d):
+    for task in global_dictionary:
+        next_time = d
+        for current in global_dictionary:
+            if task in global_dictionary[current][2] and next_time > global_dictionary[current][3]:
+                next_time = global_dictionary[current][3]
+        global_dictionary[task][5] = next_time - global_dictionary[task][4]
+
+
+def path(start, end, p=None):
+    if p is None:
+        p = []
+    p = p + [start]
+    if start == end:
+        return [p]
+    paths = []
+    if start not in global_dictionary:
+        return paths
+    for n in global_dictionary[start][2]:
+        if n not in p:
+            newpaths = path(n, end, p)
+            for newpath in newpaths:
+                paths.append(newpath)
+    return paths
+
+
+def create_new_task(task):
+    l = 0
+    p = []
+    for k in global_table:
+        tmp = path(task, k)
+        if tmp:
+            p += tmp
+    for p_ in p:
+        d = 0
+        for loc in p_[1:]:
+            d += global_dictionary[loc][1]
+        tmp = d
+        if tmp > l:
+            l = tmp
+    return l
+
+
+def solve():
+    d = 0
+    for task in global_dictionary:
+        global_dictionary[task][3] = create_new_task(task)
+        global_dictionary[task][4] = global_dictionary[task][3] + global_dictionary[task][1]
+        if global_dictionary[task][4] > d:
+            d = global_dictionary[task][4]
+    to_float(d)
+    print("Total duration of construction: " + str(d) + " week" + ("s\n" if d > 1 else "\n"))
+    tmp = []
+    for task in global_dictionary:
+        tmp.append([task, global_dictionary[task][3], global_dictionary[task][1], global_dictionary[task][5]])
+    tmp.sort(key=lambda x: (x[1], x[2], x[3]))
+    for e in tmp:
+        task = e[0]
+        print(task + " must begin ", end='')
+        if global_dictionary[task][5] > 0:
+            print("between t= " + str(global_dictionary[task][3]) + " and t=" + str(global_dictionary[task][3] + global_dictionary[task][5]))
+        else:
+            print("at t=" + str(global_dictionary[task][3]))
+    print("")
+    for e in tmp:
+        print(e[0] + "\t" + "(" + str(global_dictionary[e[0]][5]) + ")" + "\t" + str(" " * global_dictionary[e[0]][3]) + str("=" * global_dictionary[e[0]][1]))
+
+
+def run(filename):
+    with open(filename, newline='') as f:
+        file = csv.reader(f, delimiter=';')
+        for row in file:
+            if len(row) != 0:
+                temp = []
+                if len(row) < 4:
+                    global_table.append(row[0])
+                temp.append(row[1])
+                temp.append(int(row[2]))
+                temp.append(row[3:])
+                temp.extend((0, 0, 0))
+                if row[0] in global_dictionary:
+                    raise(Exception("Task name already exists"))
+                global_dictionary[row[0]] = temp
+    solve()
+
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Invalid number of args. Please use ./305construction -h to show usage.")
+        sys.exit(84)
+    if sys.argv[1] == "-h":
+        print(usage)
+        sys.exit(0)
+    filename = sys.argv[1]
+    if not os.path.isfile(filename):
+        print("Invalid file")
+        sys.exit(84)
+    try:
+        run(filename)
+    except Exception as e:
+        print("Oops Something went wrong (" + e.args[0] + ")")
+        sys.exit(84)
+    sys.exit(0)

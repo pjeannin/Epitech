@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Babel"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\.conan\;CMake Files\..\..\..\..\.conan\data\;CMake Files\..\..\..\..\.conan\data\libxml2\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\package\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\package\c61ca912b16446c0f482bc52de12394fa7e40f1d\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\package\c61ca912b16446c0f482bc52de12394fa7e40f1d\lib\;CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\package\c61ca912b16446c0f482bc52de12394fa7e40f1d\lib\cmake\;CMake Files\..\..\..\..\.conan\data\sqlite3\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\8159f2be86a3540e2747fe255ed57d4de0f55ddc\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\8159f2be86a3540e2747fe255ed57d4de0f55ddc\lib\;CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\8159f2be86a3540e2747fe255ed57d4de0f55ddc\lib\cmake\;CMake Files\..\..\..\..\.conan\data\openssl\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\dfbe50feef7f3c6223a476cd5aeadb687084a646\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\dfbe50feef7f3c6223a476cd5aeadb687084a646\lib\;CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\dfbe50feef7f3c6223a476cd5aeadb687084a646\lib\cmake\;CMake Files\..\..\..\..\.conan\data\bzip2\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\c32092bf4d4bb47cf962af898e02823f499b017e\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\c32092bf4d4bb47cf962af898e02823f499b017e\lib\;CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\c32092bf4d4bb47cf962af898e02823f499b017e\lib\cmake\;CMake Files\..\..\..\..\.conan\data\freetype\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\7d544953cc6cdd1bd06a4e40fc9904c650a37eb2\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\7d544953cc6cdd1bd06a4e40fc9904c650a37eb2\lib\;CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\7d544953cc6cdd1bd06a4e40fc9904c650a37eb2\lib\cmake\;CMake Files\..\..\..\..\.conan\data\qt\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Widgets\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server">
+				<Option output="/home/yann/EPITECH/Project/Tek3/Babel/bin/babel_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel"/>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel/babel_server_autogen/include"/>
+					<Add directory="/home/yann/.conan/data/portaudio/19.7.0/bincrafters/stable/package/1771e9fd73895a033dbbb74782310debb3832a99/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/opus"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtNetwork"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtSql"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtTest"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtPrintSupport"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtWidgets"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGL"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGLExtensions"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtGui"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtConcurrent"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtXml"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtCore"/>
+					<Add directory="/home/yann/.conan/data/libalsa/1.1.9/_/_/package/30b1dc656c82170e68989f5a539d6e3469561214/include"/>
+					<Add directory="/home/yann/.conan/data/pcre2/10.37/_/_/package/e3d86cfefb495819fc94661cefee1b4df40cbf03/include"/>
+					<Add directory="/home/yann/.conan/data/double-conversion/3.1.5/_/_/package/d8d8aba822aaa76849d2f1bafe4a2a62a9f83b74/include"/>
+					<Add directory="/home/yann/.conan/data/fontconfig/2.13.93/_/_/package/418daec2d551769ccd71ee694be68bcaa0c8a58f/include"/>
+					<Add directory="/home/yann/.conan/data/icu/69.1/_/_/package/53570d5caa8376dbdead2f216b76930a34958133/include"/>
+					<Add directory="/home/yann/.conan/data/libjpeg/9d/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/sqlite3/3.36.0/_/_/package/8159f2be86a3540e2747fe255ed57d4de0f55ddc/include"/>
+					<Add directory="/home/yann/.conan/data/libmysqlclient/8.0.25/_/_/package/ee33c9ddc92853033eef114415216a68a00407e6/include"/>
+					<Add directory="/home/yann/.conan/data/libpq/13.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/odbc/2.3.9/_/_/package/e683851f303fd129de412248ed055829cebfe89f/include"/>
+					<Add directory="/home/yann/.conan/data/xkbcommon/1.3.0/_/_/package/c8798e9ba0354e1245cb62e4db7bcd44aadb819d/include"/>
+					<Add directory="/home/yann/.conan/data/openssl/1.1.1k/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include/freetype2"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/uuid"/>
+					<Add directory="/home/yann/.conan/data/zstd/1.5.0/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/lz4/1.9.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/glib-2.0/include"/>
+					<Add directory="/home/yann/.conan/data/wayland/1.19.0/_/_/package/75fce0356cb5cb051db7304f58922551d4ffb052/include"/>
+					<Add directory="/home/yann/.conan/data/bzip2/1.0.8/_/_/package/c32092bf4d4bb47cf962af898e02823f499b017e/include"/>
+					<Add directory="/home/yann/.conan/data/libpng/1.6.37/_/_/package/025ffc7158b5e62f5f3ed9af91d48958d216f972/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/brotli"/>
+					<Add directory="/home/yann/.conan/data/expat/2.4.1/_/_/package/2bf99ee01cda593d5986afc64acf262ad576354f/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include/libxml2"/>
+					<Add directory="/home/yann/.conan/data/libffi/3.4.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/zlib/1.2.11/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libiconv/1.16/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_server"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server/fast">
+				<Option output="/home/yann/EPITECH/Project/Tek3/Babel/bin/babel_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel"/>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel/babel_server_autogen/include"/>
+					<Add directory="/home/yann/.conan/data/portaudio/19.7.0/bincrafters/stable/package/1771e9fd73895a033dbbb74782310debb3832a99/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/opus"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtNetwork"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtSql"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtTest"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtPrintSupport"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtWidgets"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGL"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGLExtensions"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtGui"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtConcurrent"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtXml"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtCore"/>
+					<Add directory="/home/yann/.conan/data/libalsa/1.1.9/_/_/package/30b1dc656c82170e68989f5a539d6e3469561214/include"/>
+					<Add directory="/home/yann/.conan/data/pcre2/10.37/_/_/package/e3d86cfefb495819fc94661cefee1b4df40cbf03/include"/>
+					<Add directory="/home/yann/.conan/data/double-conversion/3.1.5/_/_/package/d8d8aba822aaa76849d2f1bafe4a2a62a9f83b74/include"/>
+					<Add directory="/home/yann/.conan/data/fontconfig/2.13.93/_/_/package/418daec2d551769ccd71ee694be68bcaa0c8a58f/include"/>
+					<Add directory="/home/yann/.conan/data/icu/69.1/_/_/package/53570d5caa8376dbdead2f216b76930a34958133/include"/>
+					<Add directory="/home/yann/.conan/data/libjpeg/9d/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/sqlite3/3.36.0/_/_/package/8159f2be86a3540e2747fe255ed57d4de0f55ddc/include"/>
+					<Add directory="/home/yann/.conan/data/libmysqlclient/8.0.25/_/_/package/ee33c9ddc92853033eef114415216a68a00407e6/include"/>
+					<Add directory="/home/yann/.conan/data/libpq/13.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/odbc/2.3.9/_/_/package/e683851f303fd129de412248ed055829cebfe89f/include"/>
+					<Add directory="/home/yann/.conan/data/xkbcommon/1.3.0/_/_/package/c8798e9ba0354e1245cb62e4db7bcd44aadb819d/include"/>
+					<Add directory="/home/yann/.conan/data/openssl/1.1.1k/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include/freetype2"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/uuid"/>
+					<Add directory="/home/yann/.conan/data/zstd/1.5.0/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/lz4/1.9.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/glib-2.0/include"/>
+					<Add directory="/home/yann/.conan/data/wayland/1.19.0/_/_/package/75fce0356cb5cb051db7304f58922551d4ffb052/include"/>
+					<Add directory="/home/yann/.conan/data/bzip2/1.0.8/_/_/package/c32092bf4d4bb47cf962af898e02823f499b017e/include"/>
+					<Add directory="/home/yann/.conan/data/libpng/1.6.37/_/_/package/025ffc7158b5e62f5f3ed9af91d48958d216f972/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/brotli"/>
+					<Add directory="/home/yann/.conan/data/expat/2.4.1/_/_/package/2bf99ee01cda593d5986afc64acf262ad576354f/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include/libxml2"/>
+					<Add directory="/home/yann/.conan/data/libffi/3.4.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/zlib/1.2.11/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libiconv/1.16/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_server/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client">
+				<Option output="/home/yann/EPITECH/Project/Tek3/Babel/bin/babel_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel"/>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel/babel_client_autogen/include"/>
+					<Add directory="/home/yann/.conan/data/portaudio/19.7.0/bincrafters/stable/package/1771e9fd73895a033dbbb74782310debb3832a99/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/opus"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtNetwork"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtSql"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtTest"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtPrintSupport"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtWidgets"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGL"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGLExtensions"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtGui"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtConcurrent"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtXml"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtCore"/>
+					<Add directory="/home/yann/.conan/data/libalsa/1.1.9/_/_/package/30b1dc656c82170e68989f5a539d6e3469561214/include"/>
+					<Add directory="/home/yann/.conan/data/pcre2/10.37/_/_/package/e3d86cfefb495819fc94661cefee1b4df40cbf03/include"/>
+					<Add directory="/home/yann/.conan/data/double-conversion/3.1.5/_/_/package/d8d8aba822aaa76849d2f1bafe4a2a62a9f83b74/include"/>
+					<Add directory="/home/yann/.conan/data/fontconfig/2.13.93/_/_/package/418daec2d551769ccd71ee694be68bcaa0c8a58f/include"/>
+					<Add directory="/home/yann/.conan/data/icu/69.1/_/_/package/53570d5caa8376dbdead2f216b76930a34958133/include"/>
+					<Add directory="/home/yann/.conan/data/libjpeg/9d/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/sqlite3/3.36.0/_/_/package/8159f2be86a3540e2747fe255ed57d4de0f55ddc/include"/>
+					<Add directory="/home/yann/.conan/data/libmysqlclient/8.0.25/_/_/package/ee33c9ddc92853033eef114415216a68a00407e6/include"/>
+					<Add directory="/home/yann/.conan/data/libpq/13.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/odbc/2.3.9/_/_/package/e683851f303fd129de412248ed055829cebfe89f/include"/>
+					<Add directory="/home/yann/.conan/data/xkbcommon/1.3.0/_/_/package/c8798e9ba0354e1245cb62e4db7bcd44aadb819d/include"/>
+					<Add directory="/home/yann/.conan/data/openssl/1.1.1k/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include/freetype2"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/uuid"/>
+					<Add directory="/home/yann/.conan/data/zstd/1.5.0/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/lz4/1.9.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/glib-2.0/include"/>
+					<Add directory="/home/yann/.conan/data/wayland/1.19.0/_/_/package/75fce0356cb5cb051db7304f58922551d4ffb052/include"/>
+					<Add directory="/home/yann/.conan/data/bzip2/1.0.8/_/_/package/c32092bf4d4bb47cf962af898e02823f499b017e/include"/>
+					<Add directory="/home/yann/.conan/data/libpng/1.6.37/_/_/package/025ffc7158b5e62f5f3ed9af91d48958d216f972/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/brotli"/>
+					<Add directory="/home/yann/.conan/data/expat/2.4.1/_/_/package/2bf99ee01cda593d5986afc64acf262ad576354f/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include/libxml2"/>
+					<Add directory="/home/yann/.conan/data/libffi/3.4.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/zlib/1.2.11/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libiconv/1.16/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_client"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client/fast">
+				<Option output="/home/yann/EPITECH/Project/Tek3/Babel/bin/babel_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel"/>
+					<Add directory="/home/yann/EPITECH/Project/Tek3/Babel/babel_client_autogen/include"/>
+					<Add directory="/home/yann/.conan/data/portaudio/19.7.0/bincrafters/stable/package/1771e9fd73895a033dbbb74782310debb3832a99/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/opus/1.3.1/bincrafters/stable/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/opus"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtNetwork"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtSql"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtTest"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtPrintSupport"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtWidgets"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGL"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtOpenGLExtensions"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtGui"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtConcurrent"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtXml"/>
+					<Add directory="/home/yann/.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/include/QtCore"/>
+					<Add directory="/home/yann/.conan/data/libalsa/1.1.9/_/_/package/30b1dc656c82170e68989f5a539d6e3469561214/include"/>
+					<Add directory="/home/yann/.conan/data/pcre2/10.37/_/_/package/e3d86cfefb495819fc94661cefee1b4df40cbf03/include"/>
+					<Add directory="/home/yann/.conan/data/double-conversion/3.1.5/_/_/package/d8d8aba822aaa76849d2f1bafe4a2a62a9f83b74/include"/>
+					<Add directory="/home/yann/.conan/data/fontconfig/2.13.93/_/_/package/418daec2d551769ccd71ee694be68bcaa0c8a58f/include"/>
+					<Add directory="/home/yann/.conan/data/icu/69.1/_/_/package/53570d5caa8376dbdead2f216b76930a34958133/include"/>
+					<Add directory="/home/yann/.conan/data/libjpeg/9d/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/sqlite3/3.36.0/_/_/package/8159f2be86a3540e2747fe255ed57d4de0f55ddc/include"/>
+					<Add directory="/home/yann/.conan/data/libmysqlclient/8.0.25/_/_/package/ee33c9ddc92853033eef114415216a68a00407e6/include"/>
+					<Add directory="/home/yann/.conan/data/libpq/13.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/odbc/2.3.9/_/_/package/e683851f303fd129de412248ed055829cebfe89f/include"/>
+					<Add directory="/home/yann/.conan/data/xkbcommon/1.3.0/_/_/package/c8798e9ba0354e1245cb62e4db7bcd44aadb819d/include"/>
+					<Add directory="/home/yann/.conan/data/openssl/1.1.1k/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include"/>
+					<Add directory="/home/yann/.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/include/freetype2"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libuuid/1.0.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/uuid"/>
+					<Add directory="/home/yann/.conan/data/zstd/1.5.0/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/lz4/1.9.3/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/glib-2.0/include"/>
+					<Add directory="/home/yann/.conan/data/wayland/1.19.0/_/_/package/75fce0356cb5cb051db7304f58922551d4ffb052/include"/>
+					<Add directory="/home/yann/.conan/data/bzip2/1.0.8/_/_/package/c32092bf4d4bb47cf962af898e02823f499b017e/include"/>
+					<Add directory="/home/yann/.conan/data/libpng/1.6.37/_/_/package/025ffc7158b5e62f5f3ed9af91d48958d216f972/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/brotli/1.0.9/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include/brotli"/>
+					<Add directory="/home/yann/.conan/data/expat/2.4.1/_/_/package/2bf99ee01cda593d5986afc64acf262ad576354f/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include"/>
+					<Add directory="/home/yann/.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/include/libxml2"/>
+					<Add directory="/home/yann/.conan/data/libffi/3.4.2/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/zlib/1.2.11/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+					<Add directory="/home/yann/.conan/data/libiconv/1.16/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_client/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_server_autogen">
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_server_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="babel_client_autogen">
+				<Option working_dir="/home/yann/EPITECH/Project/Tek3/Babel"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 babel_client_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yann/EPITECH/Project/Tek3/Babel/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/babel_client_autogen/mocs_compilation.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/babel_server_autogen/mocs_compilation.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Client.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Client.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Tcp.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Tcp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Udp.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Udp.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Utils.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/Utils.hpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/client/main.cpp">
+			<Option target="babel_client"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/server/Database.cpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/server/Database.hpp">
+			<Option target="babel_server"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindBZip2.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindBrotli.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindEXPAT.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindFontconfig.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindFreetype.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindICU.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindIconv.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindJPEG.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindLibXml2.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindMySQL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindODBC.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindOpenSSL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindPNG.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindPostgreSQL.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindQt5.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindSQLite3.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/FindZLIB.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Finddouble-conversion.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findlibffi.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findlibuuid.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findlz4.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findopengl_system.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findpcre2.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findwayland-protocols.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findwayland.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findxkbcommon.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findxorg.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/Findzstd.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/conan_paths.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/build/conanbuildinfo.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/libxml2/2.9.12/_/_/package/c61ca912b16446c0f482bc52de12394fa7e40f1d/lib/cmake/conan-official-libxml2-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\libxml2\2.9.12\_\_\package\c61ca912b16446c0f482bc52de12394fa7e40f1d\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/sqlite3/3.36.0/_/_/package/8159f2be86a3540e2747fe255ed57d4de0f55ddc/lib/cmake/conan-official-sqlite3-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\sqlite3\3.36.0\_\_\package\8159f2be86a3540e2747fe255ed57d4de0f55ddc\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/openssl/1.1.1k/_/_/package/dfbe50feef7f3c6223a476cd5aeadb687084a646/lib/cmake/conan-official-openssl-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\openssl\1.1.1k\_\_\package\dfbe50feef7f3c6223a476cd5aeadb687084a646\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/bzip2/1.0.8/_/_/package/c32092bf4d4bb47cf962af898e02823f499b017e/lib/cmake/conan-official-bzip2-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\bzip2\1.0.8\_\_\package\c32092bf4d4bb47cf962af898e02823f499b017e\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/freetype/2.10.4/_/_/package/7d544953cc6cdd1bd06a4e40fc9904c650a37eb2/lib/cmake/conan-official-freetype-variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\freetype\2.10.4\_\_\package\7d544953cc6cdd1bd06a4e40fc9904c650a37eb2\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/lib/cmake/Qt5Core/conan_qt_executables_variables.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/lib/cmake/Qt5Core/conan_qt_qt5_coreprivate.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/lib/cmake/Qt5Gui/conan_qt_qt5_guiprivate.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/yann/EPITECH/Project/Tek3/Babel/../../../../.conan/data/qt/5.15.2/_/_/package/e4287a32e43dd9299a906d2da9d0065e1730e1db/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.conan\data\qt\5.15.2\_\_\package\e4287a32e43dd9299a906d2da9d0065e1730e1db\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

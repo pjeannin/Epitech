@@ -1,0 +1,12 @@
+/*
+** EPITECH PROJECT, 2021
+** RTYPE
+** File description:
+** RTYPE
+*/
+
+
+#ifndef __RTYPE_LIBRAIRYTYPES_HPP__
+#define __RTYPE_LIBRAIRYTYPES_HPP__
+
+#endif //__RTYPE_LIBRAIRYTYPES_HPP__

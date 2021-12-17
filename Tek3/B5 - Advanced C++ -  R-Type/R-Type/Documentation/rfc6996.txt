@@ -1,0 +1,154 @@
+R-Type Group 							 The Power Rangers
+Request for Comments: 6996				       Power Rangers, Inc.
+Category: Video Games 						      October 2021
+
+                    R-Type TCP and UDP Communication Protocol
+
+Status of this Memo
+
+    This memo is the official specification of the 2 R-Type protocols
+    (TCP / UDP) which is a 3rd year project from Epitech.
+
+Table of Contents
+1.  Introduction . . . . . . . . . . . . . . . . . . . . . . . . . 0
+2.  R-Type Architecture . . . . . . . . . . . . . . . . . . . . .  0
+3.  R-Type TCP Protocol . . . . . . . . . . . . . . . . . . . . .  1
+3a. Payload . . . . . . . . . . . . . . . . . . . . . . . . . . .  1
+3b. TCP Codes . . . . . . . . . . . . . . . . . . . . . . . . . .  1
+4.  R-Type UDP Protocol . . . . . . . . . . . . . . . . . . . . .  2
+4a. Payload . . . . . . . . . . . . . . . . . . . . . . . . . . .  2
+4b. UDP Codes . . . . . . . . . . . . . . . . . . . . . . . . . .  2
+
+
+1. Introduction
+
+    The goal of this project is to recreate the classic R-Type game (1987)
+    and add a multiplayer feature to it.
+    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+    "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to
+    be interpreted as described in RFC 2119.
+
+
+2. R-Type Architecture
+
+    The Architecture is a basic client-server game architecture. All the game engine
+    is in the server. When a client connects to the server, it uses the TCP protocol.
+    If it connects successfully, the client has the choice between creating a lobby
+    or joining an existing lobby. A maximum of 4 clients can connect to the server
+    at the same time. When the lobby’s admin wants, he can launch the game at any
+    moment. The server can run several games at the same time.
+
+
+
+
+Fantapié			               R-Type                               [Page 1]
+RFC 6996			TCP and UDP Communication Protocol             November 2021
+
+3. R-Type TCP Protocol
+
+    All the communications before the game’s launch are done using the following
+    R-Type Protocol.
+
+    3a. Payload
+
+        Every transmission done with the R-Type Protocol MUST transmit a payload
+        with the following protocol :
+
+        A TCP Request has a Request data structure has a header containing all
+        the metadata of the request (magicCode and requestCode) and the body of
+        the request.
+
+        There are 3 types of TCP body :
+
+            - OnlyUsernameBody
+            - LobbyRequest
+            - ListPlayerRequest
+
+        The data structure Request is copied into the socket via the memcpy()
+        function which allows the receiver to access the data structure simply
+        and process it.
+
+    3b. TCP Codes
+
+        These are the following code we used to allow the client and the server
+        to communicate with each other. These codes are separated into 3 different
+        categories :
+
+            Action codes :
+
+                100: Create Connection
+                101: Create lobby
+                102: List player
+                103: Join a game
+                104: Ready signal
+                105: Start signal
+                106: Someone Join Lobby
+
+            Success codes:
+
+                200: Successful connection
+                201: Successful lobby creation
+                202: Successful listing
+                203: Successful joining
+                204: Successful ready signal
+                205: Successful start
+                206: Successful someone join lobby
+
+            Failure codes :
+
+                400: Failed connection
+                401: Failed lobby creation
+                402: Failed listing
+                403: Failed joining
+                404: Failed ready signal
+                405: Failed start
+                406: Failed someone join lobby
+
+
+
+
+Fantapié			               R-Type				 [Page 2]
+RFC 6996			TCP and UDP Communication Protocol             November 2021
+
+4. R-Type UDP Protocol
+
+    All the communications during the game are done using the following R-Type
+    Protocol.
+
+    4a. Payload
+
+        Every transmission done with the R-Type Protocol MUST transmit a payload
+        with the following protocol :
+
+        An UDP Request has a Request data structure has a header containing all
+        the metadata of the request (magicCode and requestCode) and the body of
+        the request.
+
+        There are 4 types of UDP body :
+
+            - PlayerUpdate
+            - EnemyUpdate
+            - AmmoUpdate
+            - ObjectUpdate
+
+        The data structure Request is copied into the socket via the memcpy()
+        function which allows the receiver to access the data structure simply
+        and process it.
+
+    4b. UDP Codes
+
+        Action codes :
+
+            110: Send ping
+            111: Send player update
+            112: Send enemy update
+            113: Send ammo update
+            114: Send object update
+
+        Success Codes :
+
+            210: Successful ping
+            211: Successful player update
+            212: Successful enemy update
+            213: Successful ammo update
+            214: Successful object update

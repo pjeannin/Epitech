@@ -1,0 +1,25 @@
+"/Users/pierrejeannin/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie"
+-- The CXX compiler identification is AppleClang 13.0.0.13000029
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at CMakeLists.txt:12 (include):
+  include could not find requested file:
+
+    /Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/build/conanbuildinfo.cmake
+
+
+CMake Error at CMakeLists.txt:13 (include):
+  include could not find requested file:
+
+    build/conan_paths.cmake
+
+
+CMake Error at CMakeLists.txt:14 (conan_basic_setup):
+  Unknown CMake command "conan_basic_setup".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ - Babel/B-CPP-500-STG-5-1-babel-antony.fantapie/cmake-build-debug/CMakeFiles/CMakeOutput.log".

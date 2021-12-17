@@ -1,0 +1,153 @@
+Documentation protocole de communication
+
+Protocole Serveur/Client
+
+Chaque requête contient 2 éléments :
+Une structure header avec un Magic code et l'id de l'instruction
+La structure correspondant à la requête
+
+La communication Serveur/Client se fait via socket TCP.
+
+	Initialiser la connection
+
+		Client envoie -> 200 (Le client indique qu’il est connecté)
+		Serveur envoie -> 201 (Le serveur indique qu’il a bien reçu la connection)
+
+	S’inscrire
+
+		Client envoie -> 100 “email” “pseudo” “mdp” (Le client envoie toutes les infos nécessaire pour la création d’un compte)
+		Serveur envoie 101 (Le serveur indique que l’inscription a fonctionnée)
+			ou
+		Serveur envoie -> 102 (Impossible de créer le compte, l’email est déjà utilisé)
+			ou
+		Serveur envoie -> 103 (Impossible de créer le compte, le pseudo est déjà utilisé)
+
+	Se connecter
+
+		Client envoie -> 110 “email” “mdp” (Le client envoie les infos nécessaire pour la connection)
+Serveur envoie -> 111 “pseudo” “id” (Connection réussie avec “pseudo”)
+ou
+Serveur envoie -> 112 (Impossible de se connecter, pseudo ou mdp
+incorrecte)
+
+	Envoyer une demande d’ami
+
+		Client envoie -> 120 “pseudo” (Le client donne le pseudo de la personne qu’il veut inviter en ami)
+		Serveur envoie -> 121 “pseudo” (Le serveur indique que la demande d’amis a “pseudo” a bien étée envoyée)
+			ou
+		Serveur envoie -> 122 “pseudo” (Le serveur indique que “pseudo” n’existe pas)
+			ou
+		Serveur envoie -> 123 “pseudo” (Le serveur indique que le client est déja ami avec “pseudo”)
+
+	plus tard:
+		Serveur envoie -> 124 “pseudo” (Le serveur indique a l’utilisateur que pseudo a accepté sa demande d’amis)
+			ou
+		Serveur envoie -> 125 “pseudo” (Le serveur indique a l’utilisateur que pseudo a refusé sa demande d’amis)
+
+
+	Accepter une demande d’ami
+
+		Serveur envoie -> 130 “pseudo” (Le serveur indique que “pseudo” à envoyé une demande d’ami)
+		Client envoie -> 131 “pseudo” (La demande d’ami est acceptée)
+			ou
+		Client envoie -> 132 “pseudo” (Le demande d’ami est refusée)
+
+	Demande pour faire un appel avec un ami
+
+		Client envoie -> 140 “pseudo” “port” (Le client indique avec quel ami il veut faire un appel et son port)
+		Serveur envoie -> 141 “pseudo” “adresse ip” “port” (Le serveur renvoie l’ip et le port de l’ami pour faire l’appel via socket UDP, l’appel à été accepté)
+			ou
+		Serveur envoie -> 142 “pseudo” (Impossible d’appeler “pseudo”)
+
+	Recevoir un appel
+
+		Serveur envoie -> 143 “pseudo” “ip” “port” (pseudo faire un appel avec toi)
+		Client envoie -> 144 “pseudo” “port” (d’accord pour faire un appel avec pseudo)
+			ou
+		Client envoie -> 145 “pseudo” (ne veut pas faire d’appel avec pseudo)
+
+	Terminer un appel
+
+		Client envoie -> 146 “pseudo” (Client veut terminer son appel avec pseudo)		Serveur envoie au client ciblé -> 147 “pseudo” (Pseudo veut terminer l’appel avec client)
+
+	Envoyer un message
+
+		Client envoie -> 150 “pseudo” “message” (Le client indique le pseudo du destinataire ainsi que son message)
+		Serveur envoie -> 152 (le message à bien été envoyé)
+			ou
+		Serveur envoie -> 153 (l’envoie du message à échoué)
+
+	Recevoir un message
+
+		Serveur envoie -> 151 “pseudo” “message” (Le serveur indique le pseudo et le message reçu)
+
+	Demander l’historique des messages
+
+		Client envoie - > 160 “pseudo” (Le client indique le pseudo avec qui il veut l’historique)
+		Serveur envoie -> 161 “pseudo” “nb_message” [“id_sender” “msg”] [“id_sender” “msg”] … (Le serveur indique le pseudo de la conversation, le nb de message et pour chaque messages l’id du sender et le body du message)
+
+	Demander la liste d’amis
+
+		Client envoie -> 170 (Le client demande sa liste d’amis)
+		Serveur envoie -> 171 “nb_d_amis” [“pseudo1”, “pseudo2”] (le serveur donne le nb d’amis puis la liste de tous les pseudos)
+
+	Demander la liste des demandes d’amis
+
+Client envoie -> 180 (Le client demande sa liste de demandes amis)
+		Serveur envoie -> 181 “nb_d_amis” [“pseudo1”, “pseudo2”] (le serveur donne le nb d’amis puis la liste de tous les pseudos)
+
+
+
+Résumé
+
+	Le client peut envoyer :
+
+		200 (Le client indique qu’il est connecté)
+		100 “email” “pseudo” “mdp” (Le client envoie toutes les infos nécessaire pour la création d’un compte)
+		110 “email” “mdp” (Le client envoie les infos nécessaire pour la connection)
+		120 “pseudo” (Le client donne le pseudo de la personne qu’il veut inviter en ami)
+		131 “pseudo” (La demande d’ami est acceptée)
+		132 “pseudo” (Le demande d’ami est refusée)
+140 “pseudo”  “port” (Le client indique avec quel ami il veut faire un appel et son port)
+144 “pseudo” “port” (d’accord pour faire un appel avec pseudo)
+		145 “pseudo” (ne veut pas faire d’appel avec pseudo)
+146 “pseudo” (Client veut terminer son appel avec pseudo)
+150 “pseudo” “message” (Le client indique le pseudo du destinataire ainsi que son message)
+160 “pseudo” (Le client indique le pseudo avec qui il veut l’historique)
+170 (Le client demande sa liste d’amis)
+180 (Le client demande la liste des friends request en attentes)
+
+
+Le serveur peut envoyer :
+
+	201 (Le serveur indique qu’il a bien reçu le port)
+	101 (Le serveur indique que l’inscription a fonctionnée)
+		102 (Impossible de créer le compte, l’email est déjà utilisé)
+		103 (Impossible de créer le compte, le pseudo est déjà utilisé)
+		111 “pseudo” (Connection réussie avec “pseudo”)
+112 (Impossible de se connecter, pseudo ou mdp incorrecte)
+121 “pseudo” (Le serveur indique que la demande d’amis a “pseudo” a bien
+étée envoyée)
+		122 “pseudo” (Le serveur indique que “pseudo” n’existe pas)
+		123 “pseudo” (Le serveur indique que le client est déja ami avec “pseudo”)
+124 “pseudo” (Le serveur indique a l’utilisateur que pseudo a accepté sa demande d’amis)
+		125 “pseudo” (Le serveur indique a l’utilisateur que pseudo a refusé sa demande d’amis)
+		130 “pseudo” (Le serveur indique que “pseudo” à envoyé une demande d’ami)
+		141 “adresse ip” “port” (Le serveur renvoie l’ip et le port de l’ami pour faire l’appel via socket UDP)
+142 “pseudo” (Impossible d’appeler “pseudo”)
+        143 “pseudo” “ip” “port” (pseudo faire un appel avec toi)
+          147 “pseudo” (Pseudo veut terminer l’appel avec client)
+		151  “pseudo” “message”  (Le serveur indique le pseudo et le message reçu)
+        152 (le message à bien été envoyé)
+		153 (l’envoie du message à échoué)
+		161 “pseudo” “nb_message” [“struct message 1”, “struct message 2” …] (Le serveur indique le pseudo et le nb de messsage, puis toutes les structures des messages)
+		171 “nb_d_amis” [“pseudo1”, “pseudo2”] (le serveur indique le nb d’amis puis la liste de tous les pseudos)
+        181 “nb_d_amis” [“pseudo1”, “pseudo2”] (le serveur indique le nb d’amis puis la liste de tous les pseudos)
+Protocole Client/Client
+Chaque paquet contient 2 choses :
+Un int32 pour un MagicCode
+Le body
+
+(Le body étant l’échantillon de son compressé)
+
+La communication Client/Client se fait via socket UDP.

@@ -1,0 +1,4 @@
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/CMakeFiles/rebuild_cache.dir
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/CMakeFiles/edit_cache.dir
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/CMakeFiles/RTYPE_server.dir
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/build/CMakeFiles/RTYPE_client.dir

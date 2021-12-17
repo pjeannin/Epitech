@@ -1,0 +1,143 @@
+#!/usr/bin/python3
+import argparse
+import sys
+
+usage = "USAGE\n    ./303make makefile [file]\nDESCRIPTION\n    makefile    " \
+        "name of the makefile\n    file        name of a recently modified " \
+        "file "
+
+
+class El:
+    def __init__(self, line):
+        splitted_line = line.split(':')
+        self.deps = []
+        self.line = ""
+        self.name = splitted_line[0].strip()
+        for depedencie in splitted_line[1].split():
+            if not depedencie.strip():
+                continue
+            self.deps.append(depedencie.strip())
+
+    def __eq__(self, other):
+        return other == self.name
+
+    def is_dependent(self, other):
+        if other in self.deps:
+            return 1
+        else:
+            return 0
+
+    def __repr__(self):
+        str = self.name + ": " + " ".join(self.deps)
+        return str
+
+
+def array_building(files, elements):
+    arr = []
+    for file in files:
+        if file not in elements:
+            arr.append([0 for _ in range(0, len(files))])
+        else:
+            cur = elements[elements.index(file)]
+            arr.append([(elements[elements.index(file)]).is_dependent(f) for f in files])
+    return arr
+
+
+def get_line(file, elements):
+    to_print = []
+    for one_elem in elements:
+        if one_elem == file or one_elem.is_dependent(file):
+            to_print.append(one_elem.line)
+    print("\n".join(sorted(to_print)))
+
+
+def find_line(i, arr, files, elements):
+    ret_val = set()
+    for j, res in enumerate(files):
+        if arr[j][i] == 1:
+            get_line(files[j], elements)
+            find_line(j, arr, files, elements)
+            return
+    return ret_val
+
+
+def find(files, arr, i):
+    for j, res in enumerate(files):
+        if arr[j][i] == 1:
+            print(" ->", files[j], end="")
+            find(files, arr, j)
+            return
+
+
+def get_file(filepath):
+    elements = []
+    files = set()
+    lines = []
+    file = open(filepath, 'r')
+    file_lines = file.readlines()
+    for line in file_lines:
+        line = line.strip()
+        if not line:
+            continue
+        if ':' in line:
+            files = files.union(set(filter(lambda x: x, [e.strip() for e in line.replace(":", " ").split()])))
+            elements.append(El(line))
+        else:
+            elements[-1].line = line
+            lines.append(line.split())
+    ret = list(files)
+    ret.sort()
+    return elements, ret, lines
+
+
+def display_compile_lines(elements, files, filename, arr):
+    for j, res in enumerate(files):
+        if arr[j][files.index(filename)] == 1:
+            get_line(files[files.index(filename)], elements)
+            find_line(j, arr, files, elements)
+            break
+
+
+def empty_tab(nb_cells):
+    res = []
+    for i in range(nb_cells):
+        tmp = []
+        for j in range(nb_cells):
+            tmp.append(0)
+        res.append(tmp)
+    return res
+
+
+def print_makefiles_info(arr, elements, files):
+    new_tab = empty_tab(len(arr))
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            new_tab[i][j] = arr[j][i]
+    print("\n".join("[" + " ".join(map(lambda x: str(x), a)) + "]" for a in new_tab) + "\n")
+    for i, file in enumerate(files):
+        for j, res in enumerate(files):
+            if arr[j][i] == 1:
+                print(files[i], "->", files[j], end='')
+                find(files, arr, j)
+                print()
+
+
+if len(sys.argv) == 2 and sys.argv[1] == "-h":
+    print(usage)
+    exit(0)
+elif len(sys.argv) < 2 or len(sys.argv) > 3:
+    print("Incorrect number of args.")
+    exit(84)
+try:
+    args = sys.argv[1:]
+    elements, files, lines = get_file(args[0])
+    if len(files) != 0:
+        arr = array_building(files, elements)
+        if len(args) == 2:
+            display_compile_lines(elements, files, args[1], arr)
+        else:
+            print_makefiles_info(arr, elements, files)
+except:
+    print("Oops something went wrong")
+    exit(84)
+exit(0)

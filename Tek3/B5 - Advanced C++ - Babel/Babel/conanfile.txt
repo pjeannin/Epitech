@@ -1,0 +1,22 @@
+[requires]
+portaudio/19.7.0@bincrafters/stable
+opus/1.3.1@bincrafters/stable
+qt/5.15.2
+asio/1.19.2
+libffi/3.4.2
+libmysqlclient/8.0.25
+
+[options]
+qt:shared=True
+
+[generators]
+cmake
+cmake_find_package
+cmake_paths
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
+lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my "lib" folder
+lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
+plugins, * -> ./bin/plugins
+framework, * -> ./lib

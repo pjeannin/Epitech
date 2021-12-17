@@ -1,0 +1,3248 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../client/Client.hpp
+string
+-
+SFML/Graphics.hpp
+-
+client/Scene/IScene.hpp
+../client/client/Scene/IScene.hpp
+Network/SfmlTcpClient.hpp
+../client/Network/SfmlTcpClient.hpp
+shared/Event/SfmlEvent.hpp
+../client/shared/Event/SfmlEvent.hpp
+client/ECS/SfmlMusic.hpp
+../client/client/ECS/SfmlMusic.hpp
+client/Scene/MainMenuScene.hpp
+../client/client/Scene/MainMenuScene.hpp
+client/Scene/GameScene.hpp
+../client/client/Scene/GameScene.hpp
+shared/utils/print.hpp
+../client/shared/utils/print.hpp
+
+../client/ECS/SfmlDrawable.hpp
+shared/ECS/ADrawables.hpp
+../client/ECS/shared/ECS/ADrawables.hpp
+SFML/Graphics.hpp
+../client/ECS/SFML/Graphics.hpp
+memory
+-
+
+../client/ECS/SfmlMusic.hpp
+SFML/Audio.hpp
+-
+shared/ECS/AMusic.hpp
+../client/ECS/shared/ECS/AMusic.hpp
+
+../client/ECS/SfmlSound.hpp
+SFML/Audio.hpp
+-
+shared/ECS/ASound.hpp
+../client/ECS/shared/ECS/ASound.hpp
+
+../client/ECS/SfmlText.hpp
+SFML/Graphics.hpp
+-
+shared/ECS/AText.hpp
+../client/ECS/shared/ECS/AText.hpp
+
+../client/GameObjects/GameParallax.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/shared/ECS/Acceleration.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/AAmmo.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+../client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+../client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+shared/ECS/Dammage.hpp
+../client/GameObjects/GameScene/shared/ECS/Dammage.hpp
+shared/Network/Requests.hpp
+../client/GameObjects/GameScene/shared/Network/Requests.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/ABonus.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+../client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+../client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+shared/Network/Requests.hpp
+../client/GameObjects/GameScene/shared/Network/Requests.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/AEnemy.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+../client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+../client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+shared/ECS/State.hpp
+../client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+../client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+shared/Network/Requests.hpp
+-
+
+../client/GameObjects/GameScene/AMalus.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+../client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+../client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+shared/Network/Requests.hpp
+-
+
+../client/GameObjects/GameScene/Ammo1.hpp
+AAmmo.hpp
+../client/GameObjects/GameScene/AAmmo.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Ammo2.hpp
+AAmmo.hpp
+../client/GameObjects/GameScene/AAmmo.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Bonus1.hpp
+ABonus.hpp
+../client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Bonus2.hpp
+ABonus.hpp
+../client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Bonus3.hpp
+ABonus.hpp
+../client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Enemy1.hpp
+AEnemy.hpp
+../client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Enemy2.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+../client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+../client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+../client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Enemy3.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+../client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+../client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+../client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Enemy4.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+../client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+../client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+../client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Malus1.hpp
+AMalus.hpp
+../client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Malus2.hpp
+AMalus.hpp
+../client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Malus3.hpp
+AMalus.hpp
+../client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+../client/GameObjects/GameScene/Player.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/GameScene/shared/ECS/Id.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Acceleration.hpp
+../client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/Network/Requests.hpp
+../client/GameObjects/GameScene/shared/Network/Requests.hpp
+shared/ECS/Health.hpp
+../client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/Score.hpp
+../client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+../client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+client/Scene/GameScene.hpp
+../client/GameObjects/GameScene/client/Scene/GameScene.hpp
+
+../client/GameObjects/Menu/ButtonReturnCreateRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/ButtonReturnJoinRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/ButtonReturnNewGame.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/ButtonReturnSettings.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/ButtonReturnTutorial.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+../client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/GifTitle.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+../client/GameObjects/Menu/GifWeapon.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+../client/GameObjects/Menu/InputText.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+
+../client/GameObjects/Menu/NavInfo.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Scene/MainMenuScene.hpp
+../client/GameObjects/Menu/client/Scene/MainMenuScene.hpp
+
+../client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+../client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+../client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+../client/GameObjects/Menu/SpriteSelectionNewGame.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+iostream
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/SpriteSelectionSettings.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/TextMusicVolume.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/TextSoundVolume.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+../client/GameObjects/Menu/client/Client.hpp
+
+../client/GameObjects/Menu/ValidateCreateRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+
+../client/GameObjects/Menu/ValidateJoinRoom.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/Menu/shared/ECS/Id.hpp
+
+../client/GameObjects/Music.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/shared/ECS/GameObject.hpp
+client/ECS/SfmlMusic.hpp
+../client/GameObjects/client/ECS/SfmlMusic.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/shared/ECS/Id.hpp
+
+../client/GameObjects/Picture.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/shared/ECS/Id.hpp
+
+../client/GameObjects/SoundClicked.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/shared/ECS/GameObject.hpp
+client/ECS/SfmlSound.hpp
+../client/GameObjects/client/ECS/SfmlSound.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/shared/ECS/Id.hpp
+
+../client/GameObjects/Text.hpp
+shared/ECS/GameObject.hpp
+../client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+../client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+../client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+../client/GameObjects/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+../client/GameObjects/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+../client/GameObjects/client/ECS/SfmlSound.hpp
+
+../client/Network/ITcp.hpp
+string
+-
+shared/Network/Requests.hpp
+../client/Network/shared/Network/Requests.hpp
+shared/utils/print.hpp
+../client/Network/shared/utils/print.hpp
+
+../client/Network/IUdp.hpp
+shared/Network/Requests.hpp
+../client/Network/shared/Network/Requests.hpp
+
+../client/Network/SfmlTcpClient.hpp
+SFML/Network.hpp
+-
+ITcp.hpp
+../client/Network/ITcp.hpp
+
+../client/Network/SfmlUdpClient.hpp
+SFML/Network.hpp
+-
+IUdp.hpp
+../client/Network/IUdp.hpp
+
+../client/Scene/AScene.hpp
+vector
+-
+IScene.hpp
+../client/Scene/IScene.hpp
+
+../client/Scene/CreateRoomScene.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+
+../client/Scene/GameScene.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+client/Network/SfmlUdpClient.hpp
+../client/Scene/client/Network/SfmlUdpClient.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+shared/utils/print.hpp
+../client/Scene/shared/utils/print.hpp
+client/GameObjects/GameParallax.hpp
+../client/Scene/client/GameObjects/GameParallax.hpp
+client/GameObjects/Picture.hpp
+../client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/GameScene/Player.hpp
+../client/Scene/client/GameObjects/GameScene/Player.hpp
+client/GameObjects/GameScene/Enemy1.hpp
+../client/Scene/client/GameObjects/GameScene/Enemy1.hpp
+client/GameObjects/GameScene/Enemy2.hpp
+../client/Scene/client/GameObjects/GameScene/Enemy2.hpp
+client/GameObjects/GameScene/Enemy3.hpp
+../client/Scene/client/GameObjects/GameScene/Enemy3.hpp
+client/GameObjects/GameScene/Enemy4.hpp
+../client/Scene/client/GameObjects/GameScene/Enemy4.hpp
+client/GameObjects/GameScene/Bonus1.hpp
+../client/Scene/client/GameObjects/GameScene/Bonus1.hpp
+client/GameObjects/GameScene/Bonus2.hpp
+../client/Scene/client/GameObjects/GameScene/Bonus2.hpp
+client/GameObjects/GameScene/Bonus3.hpp
+../client/Scene/client/GameObjects/GameScene/Bonus3.hpp
+client/GameObjects/GameScene/Malus1.hpp
+../client/Scene/client/GameObjects/GameScene/Malus1.hpp
+client/GameObjects/GameScene/Malus2.hpp
+../client/Scene/client/GameObjects/GameScene/Malus2.hpp
+client/GameObjects/GameScene/Malus3.hpp
+../client/Scene/client/GameObjects/GameScene/Malus3.hpp
+client/GameObjects/GameScene/Ammo1.hpp
+../client/Scene/client/GameObjects/GameScene/Ammo1.hpp
+client/GameObjects/GameScene/Ammo2.hpp
+../client/Scene/client/GameObjects/GameScene/Ammo2.hpp
+
+../client/Scene/IScene.hpp
+SFML/Graphics.hpp
+-
+shared/ECS/IGameObject.hpp
+../client/Scene/shared/ECS/IGameObject.hpp
+shared/Event/AEvent.hpp
+../client/Scene/shared/Event/AEvent.hpp
+shared/ECS/IManager.hpp
+../client/Scene/shared/ECS/IManager.hpp
+
+../client/Scene/JoinRoomScene.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+
+../client/Scene/MainMenuScene.hpp
+client/Scene/AScene.hpp
+../client/Scene/client/Scene/AScene.hpp
+client/GameObjects/Picture.hpp
+../client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+../client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+../client/Scene/client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+client/GameObjects/Music.hpp
+../client/Scene/client/GameObjects/Music.hpp
+client/Scene/NewGameScene.hpp
+../client/Scene/client/Scene/NewGameScene.hpp
+client/GameObjects/Menu/GifWeapon.hpp
+../client/Scene/client/GameObjects/Menu/GifWeapon.hpp
+client/GameObjects/Menu/GifTitle.hpp
+../client/Scene/client/GameObjects/Menu/GifTitle.hpp
+client/GameObjects/Text.hpp
+../client/Scene/client/GameObjects/Text.hpp
+client/GameObjects/GameParallax.hpp
+../client/Scene/client/GameObjects/GameParallax.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+
+../client/Scene/NewGameScene.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+
+../client/Scene/SettingsScene.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+
+../client/Scene/TutorialScene.hpp
+AScene.hpp
+../client/Scene/AScene.hpp
+client/Client.hpp
+../client/Scene/client/Client.hpp
+
+../shared/Clock/clock.hpp
+chrono
+-
+vector
+-
+iostream
+-
+
+../shared/ECS/ADrawables.hpp
+string
+-
+Position.hpp
+../shared/ECS/Position.hpp
+../Clock/clock.hpp
+../shared/Clock/clock.hpp
+
+../shared/ECS/AMusic.hpp
+Position.hpp
+../shared/ECS/Position.hpp
+SFML/Audio.hpp
+-
+SFML/Graphics.hpp
+-
+
+../shared/ECS/ASound.hpp
+Position.hpp
+../shared/ECS/Position.hpp
+SFML/Audio.hpp
+-
+SFML/Graphics.hpp
+-
+
+../shared/ECS/AText.hpp
+Position.hpp
+../shared/ECS/Position.hpp
+SFML/Graphics.hpp
+-
+
+../shared/ECS/Acceleration.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/Dammage.hpp
+shared/ECS/IComponent.hpp
+../shared/ECS/shared/ECS/IComponent.hpp
+shared/ECS/IGameObject.hpp
+../shared/ECS/shared/ECS/IGameObject.hpp
+shared/ECS/Id.hpp
+../shared/ECS/shared/ECS/Id.hpp
+IEffect.hpp
+../shared/ECS/IEffect.hpp
+
+../shared/ECS/EffectHandler.hpp
+shared/ECS/IComponent.hpp
+../shared/ECS/shared/ECS/IComponent.hpp
+shared/ECS/IGameObject.hpp
+../shared/ECS/shared/ECS/IGameObject.hpp
+shared/ECS/Id.hpp
+../shared/ECS/shared/ECS/Id.hpp
+IEffect.hpp
+../shared/ECS/IEffect.hpp
+
+../shared/ECS/GameObject.hpp
+shared/ECS/IComponent.hpp
+../shared/ECS/shared/ECS/IComponent.hpp
+client/Scene/IScene.hpp
+../shared/ECS/client/Scene/IScene.hpp
+IGameObject.hpp
+../shared/ECS/IGameObject.hpp
+type_traits
+-
+
+../shared/ECS/Health.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/HitBox.hpp
+utility
+-
+Position.hpp
+../shared/ECS/Position.hpp
+
+../shared/ECS/IComponent.hpp
+memory
+-
+
+../shared/ECS/IEffect.hpp
+memory
+-
+shared/ECS/IGameObject.hpp
+../shared/ECS/shared/ECS/IGameObject.hpp
+
+../shared/ECS/IGameObject.hpp
+memory
+-
+shared/Event/AEvent.hpp
+../shared/ECS/shared/Event/AEvent.hpp
+shared/ECS/IManager.hpp
+../shared/ECS/shared/ECS/IManager.hpp
+IManager.hpp
+../shared/ECS/IManager.hpp
+
+../shared/ECS/IManager.hpp
+shared/ECS/IGameObject.hpp
+../shared/ECS/shared/ECS/IGameObject.hpp
+
+../shared/ECS/IWeapon.hpp
+IGameObject.hpp
+../shared/ECS/IGameObject.hpp
+
+../shared/ECS/Id.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/Position.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/Score.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/Stat.hpp
+array
+-
+vector
+-
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/State.hpp
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+
+../shared/ECS/WeaponHolder.hpp
+memory
+-
+IComponent.hpp
+../shared/ECS/IComponent.hpp
+IWeapon.hpp
+../shared/ECS/IWeapon.hpp
+
+../shared/Event/AEvent.hpp
+utility
+-
+vector
+-
+
+../shared/Event/SfmlEvent.hpp
+AEvent.hpp
+../shared/Event/AEvent.hpp
+SFML/Graphics.hpp
+../shared/Event/SFML/Graphics.hpp
+memory
+-
+SFML/Window/Joystick.hpp
+../shared/Event/SFML/Window/Joystick.hpp
+
+../shared/Network/Requests.hpp
+optional
+-
+variant
+-
+vector
+-
+string
+-
+cstring
+-
+iostream
+-
+shared/utils/print.hpp
+-
+memory
+-
+
+../shared/utils/print.hpp
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio.hpp
+SFML/System.hpp
+-
+SFML/Audio/InputSoundFile.hpp
+-
+SFML/Audio/Listener.hpp
+-
+SFML/Audio/Music.hpp
+-
+SFML/Audio/OutputSoundFile.hpp
+-
+SFML/Audio/Sound.hpp
+-
+SFML/Audio/SoundBuffer.hpp
+-
+SFML/Audio/SoundBufferRecorder.hpp
+-
+SFML/Audio/SoundFileFactory.hpp
+-
+SFML/Audio/SoundFileReader.hpp
+-
+SFML/Audio/SoundFileWriter.hpp
+-
+SFML/Audio/SoundRecorder.hpp
+-
+SFML/Audio/SoundSource.hpp
+-
+SFML/Audio/SoundStream.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/AlResource.hpp
+SFML/Audio/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/Export.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/InputSoundFile.hpp
+SFML/Audio/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Time.hpp
+-
+string
+-
+algorithm
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/Listener.hpp
+SFML/Audio/Export.hpp
+-
+SFML/System/Vector3.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/Music.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/SoundStream.hpp
+-
+SFML/Audio/InputSoundFile.hpp
+-
+SFML/System/Mutex.hpp
+-
+SFML/System/Time.hpp
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/OutputSoundFile.hpp
+SFML/Audio/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/Sound.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/SoundSource.hpp
+-
+SFML/System/Time.hpp
+-
+cstdlib
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundBuffer.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/AlResource.hpp
+-
+SFML/System/Time.hpp
+-
+string
+-
+vector
+-
+set
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundBufferRecorder.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/SoundBuffer.hpp
+-
+SFML/Audio/SoundRecorder.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundFileFactory.hpp
+SFML/Audio/Export.hpp
+-
+string
+-
+vector
+-
+SFML/Audio/SoundFileFactory.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundFileFactory.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundFileReader.hpp
+SFML/Audio/Export.hpp
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundFileWriter.hpp
+SFML/Audio/Export.hpp
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundRecorder.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/AlResource.hpp
+-
+SFML/System/Thread.hpp
+-
+SFML/System/Time.hpp
+-
+vector
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundSource.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/AlResource.hpp
+-
+SFML/System/Vector3.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Audio/SoundStream.hpp
+SFML/Audio/Export.hpp
+-
+SFML/Audio/SoundSource.hpp
+-
+SFML/System/Thread.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/System/Mutex.hpp
+-
+cstdlib
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Config.hpp
+TargetConditionals.h
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/TargetConditionals.h
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics.hpp
+SFML/Window.hpp
+-
+SFML/Graphics/BlendMode.hpp
+-
+SFML/Graphics/CircleShape.hpp
+-
+SFML/Graphics/Color.hpp
+-
+SFML/Graphics/ConvexShape.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Font.hpp
+-
+SFML/Graphics/Glyph.hpp
+-
+SFML/Graphics/Image.hpp
+-
+SFML/Graphics/PrimitiveType.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/RectangleShape.hpp
+-
+SFML/Graphics/RenderStates.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/RenderTexture.hpp
+-
+SFML/Graphics/RenderWindow.hpp
+-
+SFML/Graphics/Shader.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+SFML/Graphics/Sprite.hpp
+-
+SFML/Graphics/Text.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Vertex.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+SFML/Graphics/VertexBuffer.hpp
+-
+SFML/Graphics/View.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/BlendMode.hpp
+SFML/Graphics/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/CircleShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Color.hpp
+SFML/Graphics/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/ConvexShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Drawable.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/RenderStates.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Export.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Font.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Glyph.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/String.hpp
+-
+map
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Glsl.hpp
+SFML/Graphics/Transform.hpp
+-
+SFML/Graphics/Color.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/Vector3.hpp
+-
+SFML/Graphics/Glsl.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Glsl.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Glyph.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Image.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Color.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/PrimitiveType.hpp
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Rect.hpp
+SFML/System/Vector2.hpp
+-
+algorithm
+-
+SFML/Graphics/Rect.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Rect.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/RectangleShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/RenderStates.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/BlendMode.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/RenderTarget.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Color.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/View.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+SFML/Graphics/BlendMode.hpp
+-
+SFML/Graphics/RenderStates.hpp
+-
+SFML/Graphics/PrimitiveType.hpp
+-
+SFML/Graphics/Vertex.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/RenderTexture.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Window/ContextSettings.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/RenderWindow.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/Image.hpp
+-
+SFML/Window/Window.hpp
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Shader.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Glsl.hpp
+-
+SFML/Window/GlResource.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/Vector3.hpp
+-
+map
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Shape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Sprite.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Vertex.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Text.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Font.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+SFML/System/String.hpp
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Texture.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Image.hpp
+-
+SFML/Window/GlResource.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Transform.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Transformable.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/Vertex.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Color.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/VertexArray.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Vertex.hpp
+-
+SFML/Graphics/PrimitiveType.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/VertexBuffer.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/PrimitiveType.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Window/GlResource.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Graphics/View.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network.hpp
+SFML/System.hpp
+-
+SFML/Network/Ftp.hpp
+-
+SFML/Network/Http.hpp
+-
+SFML/Network/IpAddress.hpp
+-
+SFML/Network/Packet.hpp
+-
+SFML/Network/Socket.hpp
+-
+SFML/Network/SocketHandle.hpp
+-
+SFML/Network/SocketSelector.hpp
+-
+SFML/Network/TcpListener.hpp
+-
+SFML/Network/TcpSocket.hpp
+-
+SFML/Network/UdpSocket.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/Export.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/Ftp.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/TcpSocket.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Time.hpp
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/Http.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/IpAddress.hpp
+-
+SFML/Network/TcpSocket.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Time.hpp
+-
+map
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/IpAddress.hpp
+SFML/Network/Export.hpp
+-
+SFML/System/Time.hpp
+-
+istream
+-
+ostream
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/Packet.hpp
+SFML/Network/Export.hpp
+-
+string
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/Socket.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/SocketHandle.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/SocketHandle.hpp
+SFML/Config.hpp
+-
+basetsd.h
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/SocketSelector.hpp
+SFML/Network/Export.hpp
+-
+SFML/System/Time.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/TcpListener.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/Socket.hpp
+-
+SFML/Network/IpAddress.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/TcpSocket.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/Socket.hpp
+-
+SFML/System/Time.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Network/UdpSocket.hpp
+SFML/Network/Export.hpp
+-
+SFML/Network/Socket.hpp
+-
+SFML/Network/IpAddress.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System.hpp
+SFML/Config.hpp
+-
+SFML/System/Clock.hpp
+-
+SFML/System/Err.hpp
+-
+SFML/System/FileInputStream.hpp
+-
+SFML/System/InputStream.hpp
+-
+SFML/System/Lock.hpp
+-
+SFML/System/MemoryInputStream.hpp
+-
+SFML/System/Mutex.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Sleep.hpp
+-
+SFML/System/String.hpp
+-
+SFML/System/Thread.hpp
+-
+SFML/System/ThreadLocal.hpp
+-
+SFML/System/ThreadLocalPtr.hpp
+-
+SFML/System/Time.hpp
+-
+SFML/System/Utf.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/Vector3.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Clock.hpp
+SFML/System/Export.hpp
+-
+SFML/System/Time.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Err.hpp
+SFML/System/Export.hpp
+-
+ostream
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Export.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/FileInputStream.hpp
+SFML/Config.hpp
+-
+SFML/System/Export.hpp
+-
+SFML/System/InputStream.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+cstdio
+-
+string
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/InputStream.hpp
+SFML/Config.hpp
+-
+SFML/System/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Lock.hpp
+SFML/System/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/MemoryInputStream.hpp
+SFML/Config.hpp
+-
+SFML/System/InputStream.hpp
+-
+SFML/System/Export.hpp
+-
+cstdlib
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Mutex.hpp
+SFML/System/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/NonCopyable.hpp
+SFML/System/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Sleep.hpp
+SFML/System/Export.hpp
+-
+SFML/System/Time.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/String.hpp
+SFML/System/Export.hpp
+-
+SFML/System/Utf.hpp
+-
+iterator
+-
+locale
+-
+string
+-
+SFML/System/String.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/String.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Thread.hpp
+SFML/System/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+cstdlib
+-
+SFML/System/Thread.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Thread.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/ThreadLocal.hpp
+SFML/System/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+cstdlib
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/ThreadLocalPtr.hpp
+SFML/System/ThreadLocal.hpp
+-
+SFML/System/ThreadLocalPtr.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/ThreadLocalPtr.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Time.hpp
+SFML/System/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Utf.hpp
+SFML/Config.hpp
+-
+algorithm
+-
+locale
+-
+string
+-
+cstdlib
+-
+SFML/System/Utf.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Utf.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Vector2.hpp
+SFML/System/Vector2.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Vector2.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Vector3.hpp
+SFML/System/Vector3.inl
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/System/Vector3.inl
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window.hpp
+SFML/System.hpp
+-
+SFML/Window/Clipboard.hpp
+-
+SFML/Window/Context.hpp
+-
+SFML/Window/ContextSettings.hpp
+-
+SFML/Window/Cursor.hpp
+-
+SFML/Window/Event.hpp
+-
+SFML/Window/Joystick.hpp
+-
+SFML/Window/Keyboard.hpp
+-
+SFML/Window/Mouse.hpp
+-
+SFML/Window/Sensor.hpp
+-
+SFML/Window/Touch.hpp
+-
+SFML/Window/VideoMode.hpp
+-
+SFML/Window/Window.hpp
+-
+SFML/Window/WindowHandle.hpp
+-
+SFML/Window/WindowStyle.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Clipboard.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/String.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Context.hpp
+SFML/Window/Export.hpp
+-
+SFML/Window/GlResource.hpp
+-
+SFML/Window/ContextSettings.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/ContextSettings.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Cursor.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Event.hpp
+SFML/Config.hpp
+-
+SFML/Window/Joystick.hpp
+-
+SFML/Window/Keyboard.hpp
+-
+SFML/Window/Mouse.hpp
+-
+SFML/Window/Sensor.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Export.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/GlResource.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Joystick.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/String.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Keyboard.hpp
+SFML/Window/Export.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Mouse.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Sensor.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector3.hpp
+-
+SFML/System/Time.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Touch.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/VideoMode.hpp
+SFML/Window/Export.hpp
+-
+vector
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/Window.hpp
+SFML/Window/ContextSettings.hpp
+-
+SFML/Window/Cursor.hpp
+-
+SFML/Window/Export.hpp
+-
+SFML/Window/GlResource.hpp
+-
+SFML/Window/VideoMode.hpp
+-
+SFML/Window/WindowHandle.hpp
+-
+SFML/Window/WindowStyle.hpp
+-
+SFML/System/Clock.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/String.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/WindowHandle.hpp
+SFML/Config.hpp
+-
+
+/Users/pierrejeannin/.conan/data/sfml/2.5.1/_/_/package/bfa58ab78ba36e7a5080e0eed477f84e99709490/include/SFML/Window/WindowStyle.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.cpp
+Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.hpp
+utility
+-
+client/Scene/CreateRoomScene.hpp
+-
+client/Scene/JoinRoomScene.hpp
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.hpp
+string
+-
+SFML/Graphics.hpp
+-
+client/Scene/IScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/client/Scene/IScene.hpp
+Network/SfmlTcpClient.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlTcpClient.hpp
+shared/Event/SfmlEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/shared/Event/SfmlEvent.hpp
+client/ECS/SfmlMusic.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/client/ECS/SfmlMusic.hpp
+client/Scene/MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/client/Scene/MainMenuScene.hpp
+client/Scene/GameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/client/Scene/GameScene.hpp
+shared/utils/print.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/shared/utils/print.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameParallax.cpp
+GameParallax.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameParallax.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameParallax.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Acceleration.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.cpp
+AAmmo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+shared/ECS/Dammage.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Dammage.hpp
+shared/Network/Requests.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/Network/Requests.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.cpp
+ABonus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+shared/Network/Requests.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/Network/Requests.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.cpp
+AEnemy.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+shared/ECS/State.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+shared/Network/Requests.hpp
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.cpp
+AMalus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/State.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/State.hpp
+shared/ECS/EffectHandler.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/EffectHandler.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+iostream
+-
+vector
+-
+shared/Network/Requests.hpp
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo1.cpp
+Ammo1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo1.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo1.hpp
+AAmmo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo2.cpp
+Ammo2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo2.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Ammo2.hpp
+AAmmo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AAmmo.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus1.cpp
+Bonus1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus1.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus1.hpp
+ABonus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus2.cpp
+Bonus2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus2.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus2.hpp
+ABonus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus3.cpp
+Bonus3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus3.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Bonus3.hpp
+ABonus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/ABonus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy1.cpp
+Enemy1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy1.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy1.hpp
+AEnemy.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy2.cpp
+Enemy2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy2.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy2.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy3.cpp
+Enemy3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy3.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy3.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy4.cpp
+Enemy4.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy4.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Enemy4.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/HitBox.hpp
+shared/ECS/Score.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+AEnemy.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AEnemy.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus1.cpp
+Malus1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus1.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus1.hpp
+AMalus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus2.cpp
+Malus2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus2.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus2.hpp
+AMalus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus3.cpp
+Malus3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus3.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Malus3.hpp
+AMalus.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/AMalus.hpp
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Player.cpp
+Player.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Player.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/Player.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/GameObject.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Id.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/ECS/SfmlDrawable.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Position.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Acceleration.hpp
+shared/Network/Requests.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/Network/Requests.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Health.hpp
+shared/ECS/Score.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/Score.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/shared/ECS/WeaponHolder.hpp
+client/Scene/GameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/GameScene/client/Scene/GameScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnCreateRoom.cpp
+iostream
+-
+ButtonReturnCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnCreateRoom.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/NewGameScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnCreateRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnJoinRoom.cpp
+iostream
+-
+ButtonReturnJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnJoinRoom.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/NewGameScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnJoinRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnNewGame.cpp
+iostream
+-
+ButtonReturnNewGame.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnNewGame.hpp
+client/Scene/MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/MainMenuScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnNewGame.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnSettings.cpp
+iostream
+-
+ButtonReturnSettings.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnSettings.hpp
+client/Scene/MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/MainMenuScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnSettings.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnTutorial.cpp
+iostream
+-
+ButtonReturnTutorial.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnTutorial.hpp
+client/Scene/MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/MainMenuScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ButtonReturnTutorial.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+shared/ECS/HitBox.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/HitBox.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifTitle.cpp
+GifTitle.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifTitle.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifTitle.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifWeapon.cpp
+GifWeapon.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifWeapon.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/GifWeapon.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+unistd.h
+-
+iostream
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.cpp
+InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/NavInfo.cpp
+NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/NavInfo.hpp
+utility
+-
+iostream
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/NavInfo.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/Scene/MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/MainMenuScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionCreateRoom.cpp
+SpriteSelectionCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp
+utility
+-
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/NewGameScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+ValidateCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.hpp
+InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionJoinRoom.cpp
+SpriteSelectionJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp
+utility
+-
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/NewGameScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+ValidateJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.hpp
+InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionMenuStart.cpp
+SpriteSelectionMenuStart.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+utility
+-
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/NewGameScene.hpp
+client/Scene/SettingsScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/SettingsScene.hpp
+client/Scene/TutorialScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/TutorialScene.hpp
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+iostream
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionNewGame.cpp
+SpriteSelectionNewGame.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionNewGame.hpp
+client/Scene/JoinRoomScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/JoinRoomScene.hpp
+client/Scene/CreateRoomScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Scene/CreateRoomScene.hpp
+utility
+-
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/InputText.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionNewGame.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+iostream
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionSettings.cpp
+SpriteSelectionSettings.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionSettings.hpp
+utility
+-
+client/GameObjects/SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/GameObjects/SoundClicked.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/SpriteSelectionSettings.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextMusicVolume.cpp
+TextMusicVolume.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextMusicVolume.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextMusicVolume.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextSoundVolume.cpp
+TextSoundVolume.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextSoundVolume.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/TextSoundVolume.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlSound.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.cpp
+iostream
+-
+ValidateCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateCreateRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.cpp
+iostream
+-
+ValidateJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/ValidateJoinRoom.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Menu/shared/ECS/Id.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Music.cpp
+iostream
+-
+Music.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Music.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Music.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/GameObject.hpp
+client/ECS/SfmlMusic.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlMusic.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Id.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Picture.cpp
+iostream
+-
+Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Picture.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Picture.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Id.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/SoundClicked.cpp
+SoundClicked.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/SoundClicked.hpp
+utility
+-
+iostream
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/SoundClicked.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/GameObject.hpp
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlSound.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Id.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Text.cpp
+Text.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Text.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/Text.hpp
+shared/ECS/GameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/GameObject.hpp
+shared/ECS/Position.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Position.hpp
+client/ECS/SfmlDrawable.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlDrawable.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/shared/ECS/Id.hpp
+client/ECS/SfmlText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlText.hpp
+iostream
+-
+vector
+-
+client/ECS/SfmlSound.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/GameObjects/client/ECS/SfmlSound.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/ITcp.hpp
+string
+-
+shared/Network/Requests.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/shared/Network/Requests.hpp
+shared/utils/print.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/shared/utils/print.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/SfmlTcpClient.hpp
+SFML/Network.hpp
+-
+ITcp.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Network/ITcp.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.cpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+vector
+-
+IScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/IScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/CreateRoomScene.cpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/ButtonReturnCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ButtonReturnCreateRoom.hpp
+client/GameObjects/Menu/InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/InputText.hpp
+client/GameObjects/Text.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Text.hpp
+CreateRoomScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/CreateRoomScene.hpp
+client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/SpriteSelectionCreateRoom.hpp
+client/GameObjects/Menu/ValidateCreateRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ValidateCreateRoom.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/CreateRoomScene.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/GameScene.cpp
+GameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/GameScene.hpp
+utility
+-
+shared/ECS/Health.hpp
+-
+shared/ECS/Score.hpp
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/GameScene.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+client/Network/SfmlUdpClient.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Network/SfmlUdpClient.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+shared/utils/print.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/shared/utils/print.hpp
+client/GameObjects/GameParallax.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameParallax.hpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/GameScene/Player.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Player.hpp
+client/GameObjects/GameScene/Enemy1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Enemy1.hpp
+client/GameObjects/GameScene/Enemy2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Enemy2.hpp
+client/GameObjects/GameScene/Enemy3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Enemy3.hpp
+client/GameObjects/GameScene/Enemy4.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Enemy4.hpp
+client/GameObjects/GameScene/Bonus1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Bonus1.hpp
+client/GameObjects/GameScene/Bonus2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Bonus2.hpp
+client/GameObjects/GameScene/Bonus3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Bonus3.hpp
+client/GameObjects/GameScene/Malus1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Malus1.hpp
+client/GameObjects/GameScene/Malus2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Malus2.hpp
+client/GameObjects/GameScene/Malus3.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Malus3.hpp
+client/GameObjects/GameScene/Ammo1.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Ammo1.hpp
+client/GameObjects/GameScene/Ammo2.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameScene/Ammo2.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/IScene.hpp
+SFML/Graphics.hpp
+-
+shared/ECS/IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/shared/ECS/IGameObject.hpp
+shared/Event/AEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/shared/Event/AEvent.hpp
+shared/ECS/IManager.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/shared/ECS/IManager.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/JoinRoomScene.cpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/ButtonReturnJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ButtonReturnJoinRoom.hpp
+client/GameObjects/Menu/InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/InputText.hpp
+client/GameObjects/Text.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Text.hpp
+JoinRoomScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/JoinRoomScene.hpp
+client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/SpriteSelectionJoinRoom.hpp
+client/GameObjects/Menu/ValidateJoinRoom.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ValidateJoinRoom.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/JoinRoomScene.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/MainMenuScene.cpp
+MainMenuScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/MainMenuScene.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/MainMenuScene.hpp
+client/Scene/AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Scene/AScene.hpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/SpriteSelectionMenuStart.hpp
+client/GameObjects/Music.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Music.hpp
+client/Scene/NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Scene/NewGameScene.hpp
+client/GameObjects/Menu/GifWeapon.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/GifWeapon.hpp
+client/GameObjects/Menu/GifTitle.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/GifTitle.hpp
+client/GameObjects/Text.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Text.hpp
+client/GameObjects/GameParallax.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/GameParallax.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/NewGameScene.cpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/SpriteSelectionNewGame.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/SpriteSelectionNewGame.hpp
+client/GameObjects/Menu/ButtonReturnNewGame.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ButtonReturnNewGame.hpp
+client/GameObjects/Menu/InputText.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/InputText.hpp
+client/GameObjects/Text.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Text.hpp
+NewGameScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/NewGameScene.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/NewGameScene.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/SettingsScene.cpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+client/GameObjects/Menu/SpriteSelectionSettings.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/SpriteSelectionSettings.hpp
+client/GameObjects/Menu/TextMusicVolume.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/TextMusicVolume.hpp
+client/GameObjects/Menu/TextSoundVolume.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/TextSoundVolume.hpp
+SettingsScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/SettingsScene.hpp
+client/GameObjects/Menu/ButtonReturnSettings.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ButtonReturnSettings.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/SettingsScene.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/TutorialScene.cpp
+client/GameObjects/Picture.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Picture.hpp
+client/GameObjects/Menu/NavInfo.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/NavInfo.hpp
+TutorialScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/TutorialScene.hpp
+client/GameObjects/Menu/ButtonReturnTutorial.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/GameObjects/Menu/ButtonReturnTutorial.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/TutorialScene.hpp
+AScene.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/AScene.hpp
+client/Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Scene/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/main.cpp
+iostream
+-
+Client.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/client/Client.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Dammage.cpp
+Dammage.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Dammage.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Dammage.hpp
+shared/ECS/IComponent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IComponent.hpp
+shared/ECS/IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IGameObject.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/Id.hpp
+IEffect.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IEffect.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.cpp
+Effect.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.hpp
+shared/ECS/Stat.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/Stat.hpp
+shared/ECS/Health.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/Health.hpp
+shared/ECS/WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/WeaponHolder.hpp
+shared/ECS/Acceleration.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/Acceleration.hpp
+shared/ECS/State.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/State.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.hpp
+IEffect.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IEffect.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/EffectHandler.cpp
+EffectHandler.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/EffectHandler.hpp
+iostream
+-
+utility
+-
+Effect.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/Effect.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/EffectHandler.hpp
+shared/ECS/IComponent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IComponent.hpp
+shared/ECS/IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IGameObject.hpp
+shared/ECS/Id.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/Id.hpp
+IEffect.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IEffect.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IComponent.hpp
+memory
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IEffect.hpp
+memory
+-
+shared/ECS/IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IGameObject.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IGameObject.hpp
+memory
+-
+shared/Event/AEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/Event/AEvent.hpp
+shared/ECS/IManager.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IManager.hpp
+IManager.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IManager.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IManager.hpp
+shared/ECS/IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/shared/ECS/IGameObject.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IWeapon.hpp
+IGameObject.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IGameObject.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/WeaponHolder.cpp
+WeaponHolder.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/WeaponHolder.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/WeaponHolder.hpp
+memory
+-
+IComponent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IComponent.hpp
+IWeapon.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/ECS/IWeapon.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.cpp
+AEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.hpp
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.hpp
+utility
+-
+vector
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SfmlEvent.cpp
+SfmlEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SfmlEvent.hpp
+utility
+-
+
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SfmlEvent.hpp
+AEvent.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/AEvent.hpp
+SFML/Graphics.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SFML/Graphics.hpp
+memory
+-
+SFML/Window/Joystick.hpp
+/Users/pierrejeannin/Documents/Epitech/Tek3/B5 - Advanced C++ -  R-Type/R-Type/shared/Event/SFML/Window/Joystick.hpp
+
