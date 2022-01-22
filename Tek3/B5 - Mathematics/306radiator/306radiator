@@ -1,0 +1,94 @@
+#!/usr/bin/python3
+
+import sys
+
+
+def set_mat(m, n, y):
+    _ = 0
+    for i in range(y + n + 1, y - 1 + 2 * n):
+        x, x_, p, c = 0, 0, [1 + _ + y, n + _ + y, n + _ + 1 + y, n + _ + 2 + y, 2 * n + _ + 1 + y], [1, 1, -4, 1, 1]
+        for e in m[i]:
+            if x in p:
+                m[i][x] = int((1 / 0.5 ** 2) * c[x_])
+                x_ += 1
+            x += 1
+        _ += 1
+    for i in range(2 * n - 1 + y, 2 * n + 1 + y):
+        m[i][i] = 1
+    _ += 2
+    return _
+
+
+def t(_, __, k, i, m):
+    _[k] = [a + b for a, b in zip(_[k], [x * m for x in _[i]])]
+    __[k] = __[k] + m * __[i]
+
+
+def gauss(m, n, ir, jr):
+    f, y = [0.0 for x in range(n ** 2)], [0.0 for x in range(n ** 2)]
+    y[ir * n + jr] = -300.0
+    for i in range(0, len(m) - 1):
+        _ = i
+        for k in range(i, len(m)):
+            if abs(m[k][i]) > abs(m[_][i]):
+                _ = k
+        j = _
+        m[i], m[j], y[i], y[j] = m[j], m[i], y[j], y[i]
+        for k in range(i + 1, len(m)):
+            t(m, y, k, i, (float(m[k][i]) * - 1.0) / float(m[i][i]))
+    for i in range(len(m) - 1, -1, -1):
+        for k in range(i + 1, len(m)):
+            y[i] -= float(m[i][k]) * f[k]
+        f[i] = y[i] / float(m[i][i])
+    return f
+
+
+def init_mat(n, ir, jr, p=False):
+    m, y = [[0 for _ in range(n ** 2)] for __ in range(n ** 2)], 0
+    for i_ in range(0, n + 1):
+        m[i_][i_] = 1
+    while y + n < n ** 2 - 1 - n:
+        y += set_mat(m, n, y)
+    for i_ in range(n + y, n ** 2):
+        m[i_][i_] = 1
+    if p:
+        for _ in m:
+            print("\t".join([str(e) for e in _]))
+        print()
+    f = gauss(m, n, ir, jr)
+    return f
+
+
+def all_matrix(n, ir, jr):
+    if n < 1 or (ir * n + jr) > n ** 2:
+        exit(84)
+    f = init_mat(n, ir, jr, True)
+    for _ in f:
+        print(round(_ + 0.001, 1))
+
+
+def only_one_point(n, ir, jr, i, j):
+    if n < 1 or (ir * n + jr) > n ** 2:
+        exit(84)
+    if (n * i + j) > n ** 2:
+        exit(84)
+    f = init_mat(n, ir, jr)
+    print(round(f[n * i + j] + 0.001, 1))
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1] == '-h':
+        print("usage")
+        sys.exit(0)
+    elif len(sys.argv) == 4:
+        try:
+            all_matrix(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
+        except:
+            exit(84)
+    elif len(sys.argv) == 6:
+        try:
+            only_one_point(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]))
+        except:
+            exit(84)
+
+    sys.exit(0)

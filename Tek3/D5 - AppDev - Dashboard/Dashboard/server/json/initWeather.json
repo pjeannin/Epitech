@@ -1,0 +1,47 @@
+{
+    "name": "Weather",
+    "widgets": [
+    {
+        "name": "Current weather",
+        "description": "Get current weather from a specific location",
+        "params": [
+        {
+            "name": "City name",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    },
+    {
+        "name": "Weather forecast",
+        "description": "Get weather forecast from a specific location",
+        "params": [
+        {
+            "name": "City name",
+            "type": "String"
+        },
+        {
+            "name": "Day number",
+            "type": "Number"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    },
+    {
+        "name": "Current air quality",
+        "description": "Get air quality from a specific location",
+        "params": [
+        {
+            "name": "City name",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    }]
+}

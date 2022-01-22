@@ -1,0 +1,17 @@
+{
+    "name": "Youtube",
+    "widgets": [
+    {
+        "name": "Channel Infos",
+        "description": "Get Youtube channel infos",
+        "params": [
+        {
+            "name": "Youtube channel name",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    }]
+}

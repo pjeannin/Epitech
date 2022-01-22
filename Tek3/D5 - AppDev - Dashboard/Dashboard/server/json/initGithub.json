@@ -1,0 +1,30 @@
+{
+    "name": "Github",
+    "widgets": [
+    {
+        "name": "User Infos",
+        "description": "Get Github user infos",
+        "params": [
+        {
+            "name": "Github Username",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    },
+    {
+        "name": "Repository List",
+        "description": "Get repository list from a Github user",
+        "params": [
+        {
+            "name": "Github Username",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    }]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Pornhub",
+    "widgets": [
+    {
+        "name": "Video infos",
+        "description": "Get informations from a specific video",
+        "params": [
+        {
+            "name": "Video ID",
+            "type": "String"
+        },
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    },
+    {
+        "name": "Top videos",
+        "description": "Get the top videos list at the moment from pornhub",
+        "params": [
+        {
+            "name": "Refresh time",
+            "type": "number"
+        }]
+    }]
+}

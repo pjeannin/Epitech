@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Redditech</string>
+    <string name="connection_link">https://www.reddit.com/api/v1/authorize?client_id=W752HSGWq0KX0H-1IzBGqw&amp;response_type=code&amp;state=achetez_des_AirPods&amp;redirect_uri=http://localhost&amp;duration=temporary&amp;scope=*</string>
+    <string name="mainPageTitle">REDDITECH</string>
+    <string name="new_fliter_icon_description">New fliter icon</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="search_icon">search icon</string>
+    <string name="search_hint">What are you looking for ...</string>
+    <string name="delete_Search_description">Delete search bar button</string>
+    <string name="backround_profile_image">Backround profile image</string>
+    <string name="setteings_button">Setteings button</string>
+    <string name="about_me">About Me</string>
+    <string name="tmp_about_me_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</string>
+    <string name="press_to_sign_in">Press to Sign In</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="done_button_text">Done</string>
+    <string name="search_include_over_18">Search include over 18</string>
+    <string name="public_votes">Public votes</string>
+    <string name="click_tracking">Click tracking</string>
+    <string name="show_gold_expiration">Show gold expiration</string>
+    <string name="location_based_recommandation">Location based recommandation</string>
+    <string name="mark_messages_read">Mark messages read</string>
+    <string name="subscriber">"Community · %1$d members"</string>
+    <string name="prefixed_username">u/%1$s</string>
+</resources>

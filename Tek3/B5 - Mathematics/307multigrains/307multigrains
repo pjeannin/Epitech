@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+
+import sys
+
+
+usage = """USAGE
+    ./307multigrains n1 n2 n3 n4 po pw pc pb ps
+DESCRIPTION
+    n1      number of tons of fertilizer F1
+    n2      number of tons of fertilizer F2
+    n3      number of tons of fertilizer F3
+    n4      number of tons of fertilizer F4
+    po      price of one unit of oat
+    pw      price of one unit of wheat
+    pc      price of one unit of corn
+    pb      price of one unit of barley
+    ps      price of one unit of soy"""
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1] == "-h":
+        print(usage)
+        exit(0)
+    elif len(sys.argv) == 10:
+        try:
+            n = [float(x) for x in sys.argv[1:5]]
+            p = [float(x) for x in sys.argv[5:]]
+            for element in n:
+                if element < 0:
+                    raise ValueError
+            for element in p:
+                if element < 0:
+                    raise ValueError
+            print("Resources: {:.0f} F1, {:.0f} F2, {:.0f} F3, {:.0f} F4".format(*n), end="\n\n")
+            matrix = [[1, 0, 1, 0, 2], [1, 2, 0, 1, 0], [2, 1, 0, 1, 0], [0, 0, 3, 1, 2], list(map(lambda x: x * -1, p)) + ([0] * 5)]
+            for _ in range(4):
+                for __ in range(4):
+                    if __ == _:
+                        matrix[_].append(1)
+                    else:
+                        matrix[_].append(0)
+                matrix[_].append(n[_])
+            tab = [-1] * 4
+            tmp = matrix[len(matrix) - 1][:5]
+            tmp_ = min(tmp)
+            y, x = -1, -1
+            if not (tmp_ >= 0):
+                x = tmp.index(tmp_)
+                tmp_ = 99999999999
+                for _______ in range(len(matrix) - 1):
+                    if matrix[_______][len(matrix[0]) - 1]:
+                        if matrix[_______][x] > 0 and (tmp_ > matrix[_______][len(matrix[0]) - 1] / matrix[_______][x] > 0):
+                            y = _______
+                            tmp_ = matrix[_______][len(matrix[0]) - 1] / matrix[_______][x]
+                    elif tmp_ > matrix[_______][x] > 0:
+                        y = _______
+                        tmp_ = matrix[_______][len(matrix[0]) - 1] / matrix[_______][x]
+            while not (y == -1 or x == -1):
+                matrix[y] = list(map(lambda s: s / matrix[y][x], matrix[y]))
+                for ___ in range(len(matrix)):
+                    if ___ == y:
+                        continue
+                    km = matrix[___][x]
+                    for ____ in range(len(matrix[0])):
+                        matrix[___][____] -= km * matrix[y][____]
+                tab[y] = x
+                tmp = matrix[len(matrix) - 1][:5]
+                tmp_ = min(tmp)
+                y, x = -1, -1
+                if not (tmp_ >= 0):
+                    x = tmp.index(tmp_)
+                    tmp_ = 99999999999
+                    for _______ in range(len(matrix) - 1):
+                        if matrix[_______][len(matrix[0]) - 1]:
+                            if matrix[_______][x] > 0 and (
+                                    tmp_ > matrix[_______][len(matrix[0]) - 1] / matrix[_______][x] > 0):
+                                y = _______
+                                tmp_ = matrix[_______][len(matrix[0]) - 1] / matrix[_______][x]
+                        elif tmp_ > matrix[_______][x] > 0:
+                            y = _______
+                            tmp_ = matrix[_______][len(matrix[0]) - 1] / matrix[_______][x]
+            e = len(matrix[0]) - 1
+            _____ = ["0"] * 5
+            tt = 0
+            for ______ in range(4):
+                if tab[______] != -1:
+                    if matrix[______][-1] != 0:
+                        _____[tab[______]] = "{:.2f}".format(matrix[______][-1])
+                        tt += matrix[______][-1] * p[tab[______]]
+                    else:
+                        _____[tab[______]] = "{:.0f}".format(matrix[______][-1])
+            print("Oat: {} units at ${:.0f}/unit".format(_____[0], p[0]))
+            print("Wheat: {} units at ${:.0f}/unit".format(_____[1], p[1]))
+            print("Corn: {} units at ${:.0f}/unit".format(_____[2], p[2]))
+            print("Barley: {} units at ${:.0f}/unit".format(_____[3], p[3]))
+            print("Soy: {} units at ${:.0f}/unit".format(_____[4], p[4]))
+            print()
+            print("Total production value: ${:.2f}".format(tt))
+        except:
+            print("Oops")
+            exit(84)
+    exit(0)

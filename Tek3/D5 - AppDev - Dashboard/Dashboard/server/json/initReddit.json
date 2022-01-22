@@ -1,0 +1,17 @@
+{
+  "name": "Reddit",
+  "widgets": [
+    {
+      "name": "Messages",
+      "description": "Displays the last post from a subreddit.",
+      "params": [
+        {
+          "name": "Message Type (inbox, sent, unread)",
+          "type": "String"
+        },
+        {
+          "name": "Refresh time",
+          "type": "number"
+        }]
+    }]
+}
