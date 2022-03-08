@@ -20,6 +20,7 @@
 #include <time.h>
 #include "my_runner.h"
 
+
 background_t *init_background(void)
 {
     background_t *back = malloc(sizeof(background_t));
