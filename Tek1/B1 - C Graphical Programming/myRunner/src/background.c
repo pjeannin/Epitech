@@ -5,7 +5,6 @@
 ** my_runner
 */
 
-
 #include <SFML/Graphics/RenderWindow.h>
 #include <SFML/Graphics/Sprite.h>
 #include <SFML/Graphics/Texture.h>
